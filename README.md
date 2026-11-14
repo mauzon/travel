@@ -4,7 +4,7 @@
 
 Put the places you want to see, where you want to eat, and the events you're going to on one page. For every place you see how far it is and how long it takes to get there from your starting point: a hotel, a friend's flat, an Airbnb, a train station during a layover, whatever you like. You can have several. Light or dark mode, English or Russian.
 
-👉 **[See the live demo: demotrip.25h.me](https://demotrip.25h.me/)** (London, made-up data) · Project page: [pinkeepr.25h.me](https://pinkeepr.25h.me/)
+👉 **[Live demo: demotrip.25h.me](https://demotrip.25h.me/)**, a public instance of this template with made-up London data · About the project: [pinkeepr.25h.me](https://pinkeepr.25h.me/)
 
 ![London demo on desktop](docs/screenshots/london-en-light-1280px.png)
 
