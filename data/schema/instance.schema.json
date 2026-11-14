@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://travel-places.local/schema/instance.schema.json",
+  "title": "Travel instance state (no secrets)",
+  "type": "object",
+  "required": ["schemaVersion", "repository", "hosting", "domain", "accessControl", "site"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1, "maximum": 1 },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "repository": {
+      "type": "object",
+      "required": ["url", "defaultBranch", "visibility"],
+      "properties": {
+        "url": { "type": "string" },
+        "defaultBranch": { "type": "string" },
+        "visibility": { "enum": ["public", "private", "internal", "unknown"] }
+      }
+    },
+    "hosting": {
+      "type": "object",
+      "required": ["provider", "buildCommand", "outputDirectory"],
+      "properties": {
+        "provider": { "enum": ["cloudflare", "vercel", "railway", "netlify", "none", "unknown"] },
+        "projectName": { "type": "string" },
+        "productionUrl": { "type": "string" },
+        "buildCommand": { "type": "string" },
+        "outputDirectory": { "type": "string" },
+        "gitIntegration": { "type": "boolean" }
+      }
+    },
+    "domain": {
+      "type": "object",
+      "properties": {
+        "customDomain": { "type": "string" },
+        "dnsManagedBy": { "type": "string" }
+      }
+    },
+    "accessControl": {
+      "type": "object",
+      "required": ["provider"],
+      "properties": {
+        "provider": {
+          "enum": ["cloudflare-access", "vercel-protection", "basic-auth", "none", "unknown"]
+        },
+        "policySummary": { "type": "string" },
+        "allowedEmails": {
+          "type": "array",
+          "items": { "type": "string", "format": "email" }
+        }
+      }
+    },
+    "site": {
+      "type": "object",
+      "required": ["defaultLang", "defaultCity", "loadedPacks"],
+      "properties": {
+        "defaultLang": { "enum": ["en", "ru"] },
+        "defaultCity": { "type": "string" },
+        "loadedPacks": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "notes": { "type": "string" }
+  }
+}

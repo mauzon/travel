@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "london",
+  "name": "London demo",
+  "description": "Public London sights with Park Plaza Westminster Bridge and a fictional O2 concert origin. Routes are precomputed for offline builds.",
+  "cityIds": ["london"],
+  "config": {
+    "defaultLang": "en",
+    "defaultCity": "london",
+    "siteTitle": "Лондон (демо)",
+    "siteTitle_en": "London (demo)",
+    "googleList": "",
+    "cities": [
+      {
+        "slug": "london",
+        "title": "Лондон",
+        "title_en": "London"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "london.json",
+      "target": "data/cities/london.json"
+    }
+  ]
+}

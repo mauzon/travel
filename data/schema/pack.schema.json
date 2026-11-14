@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://travel-places.local/schema/pack.schema.json",
+  "title": "Demo data pack manifest",
+  "type": "object",
+  "required": ["schemaVersion", "id", "name", "description", "cityIds", "config", "files"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1, "maximum": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": "string", "minLength": 1 },
+    "cityIds": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+      "minItems": 1
+    },
+    "config": {
+      "type": "object",
+      "required": ["defaultLang", "defaultCity", "siteTitle", "siteTitle_en", "googleList", "cities"],
+      "properties": {
+        "defaultLang": { "enum": ["en", "ru"] },
+        "defaultCity": { "type": "string" },
+        "siteTitle": { "type": "string" },
+        "siteTitle_en": { "type": "string" },
+        "googleList": { "type": "string" },
+        "cities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["slug", "title", "title_en"],
+            "properties": {
+              "slug": { "type": "string" },
+              "title": { "type": "string" },
+              "title_en": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path", "target"],
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9._-]+\\.json$"
+          },
+          "target": {
+            "type": "string",
+            "pattern": "^data/cities/[a-z0-9]+(?:-[a-z0-9]+)*\\.json$"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+data/cache/osrm.json
+data/cache/transit-tfl.json
+data/cache/list-extract.json
+data/sync-report.json
+data/raw/
+.wrangler/
+/tmp/
+.DS_Store
+src/city-data.json
+src/site-config.json
+src/build-meta.json
+.travel/instance.json
+.env
+.env.*
+reports/

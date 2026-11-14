@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "1970-01-01T00:00:00.000Z",
+  "repository": {
+    "url": "https://github.com/YOUR_USER/YOUR_REPO",
+    "defaultBranch": "main",
+    "visibility": "private"
+  },
+  "hosting": {
+    "provider": "none",
+    "projectName": "",
+    "productionUrl": "",
+    "buildCommand": "npm ci && npm run build",
+    "outputDirectory": "dist",
+    "gitIntegration": true
+  },
+  "domain": {
+    "customDomain": "",
+    "dnsManagedBy": ""
+  },
+  "accessControl": {
+    "provider": "none",
+    "policySummary": "",
+    "allowedEmails": []
+  },
+  "site": {
+    "defaultLang": "en",
+    "defaultCity": "",
+    "loadedPacks": []
+  },
+  "notes": "Copy to .travel/instance.json after fork. Never store API tokens or passwords here."
+}

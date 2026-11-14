@@ -1,0 +1,1871 @@
+{
+  "slug": "london",
+  "name_ru": "Лондон",
+  "name_en": "London",
+  "country": "GB",
+  "timezone": "Europe/London",
+  "currency": "GBP",
+  "hotel": {
+    "name": "Park Plaza Westminster Bridge London",
+    "address": "200 Westminster Bridge Rd, London SE1 7UT",
+    "lat": 51.5008,
+    "lng": -0.1173,
+    "maps_url": "https://maps.google.com/?cid=995465696950930326",
+    "district": "South Bank",
+    "district_en": "South Bank",
+    "stay": {
+      "check_in": "2027-03-12",
+      "check_out": "2027-03-16",
+      "label": "Sample stay (demo only)"
+    },
+    "transit_description": "Рядом: Lambeth North, Waterloo, London Waterloo, Westminster (Bakerloo, Jubilee, Northern, Waterloo City, Waterloo & City, South Western Railway). Оплата contactless или Oyster.",
+    "transit_description_en": "Nearest: Lambeth North, Waterloo, London Waterloo, Westminster (Bakerloo, Jubilee, Northern, Waterloo City, Waterloo & City, South Western Railway). Pay-as-you-go with contactless or Oyster.",
+    "google": {
+      "cid": "995465696950930326",
+      "feature_id": "0x487604b89a2ce219:0xdd09ac6f4d8cb96",
+      "maps_url": "https://www.google.com/maps/place/Park+Plaza+London+Westminster+Bridge/@51.5008,-0.1173,16z/data=!3m1!5s0x487604b9470980c1:0xaa60a4e2b450296!4m9!3m8!1s0x487604b89a2ce219:0xdd09ac6f4d8cb96!5m2!4m1!1i2!8m2!3d51.501!4d-0.1169!16s%2Fg%2F11bxdxrymk"
+    }
+  },
+  "origins": [
+    {
+      "id": "hotel",
+      "label_ru": "Park Plaza Westminster Bridge",
+      "label_en": "Park Plaza Westminster Bridge",
+      "kind": "hotel",
+      "default": true,
+      "lat": 51.5008,
+      "lng": -0.1173,
+      "google_maps_url": "https://maps.google.com/?cid=995465696950930326",
+      "google": {
+        "cid": "995465696950930326",
+        "feature_id": "0x487604b89a2ce219:0xdd09ac6f4d8cb96"
+      }
+    },
+    {
+      "id": "concert-o2",
+      "label_ru": "Концерт в The O2",
+      "label_en": "Concert at The O2",
+      "kind": "venue",
+      "lat": 51.503,
+      "lng": -0.0032,
+      "google_maps_url": "https://maps.google.com/?cid=10961177707974089439",
+      "google": {
+        "cid": "10961177707974089439",
+        "feature_id": "0x47d8a81c5507b387:0x981ded0cf3b9dadf"
+      }
+    }
+  ],
+  "transport": {
+    "taxi": {
+      "base_fare_thb": 4,
+      "per_km_thb_min": 2,
+      "per_km_thb_max": 3,
+      "traffic_factor": 1.35,
+      "note": "London black-cab / ride-hail estimate (GBP; demo only)."
+    },
+    "transit_description": "Tube, Elizabeth line, buses — pay-as-you-go with contactless.",
+    "transit_description_en": "Tube, Elizabeth line, buses — pay-as-you-go with contactless."
+  },
+  "source": {
+    "filter": {
+      "lat": 51.5008,
+      "lng": -0.1173,
+      "radius_km": 25
+    }
+  },
+  "places": [
+    {
+      "id": "tower-of-london",
+      "name": "Tower of London",
+      "name_en": "Tower of London",
+      "name_ru": "Лондонский Тауэр",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Historic castle and Crown Jewels on the Thames.",
+      "description": "Historic castle and Crown Jewels on the Thames.",
+      "maps_url": "https://maps.google.com/?cid=12159518736249087079",
+      "lat": 51.5081,
+      "lng": -0.0759,
+      "sort_km": 4.068,
+      "walk": {
+        "km": 3.7227518164210283,
+        "min": 48,
+        "practical": false,
+        "label": "далеко (~3,7 км)",
+        "label_en": "far (~3.7 km)"
+      },
+      "taxi": {
+        "km": 4.068,
+        "min_low": 13,
+        "min_high": 17,
+        "thb_min": 10,
+        "thb_max": 20,
+        "label": "13–17 мин · 4,1 км · 10–20 £",
+        "label_en": "13–17 min · 4.1 km · £10–20"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 3.7227518164210283,
+            "min": 48,
+            "practical": false,
+            "label": "далеко (~3,7 км)",
+            "label_en": "far (~3.7 km)"
+          },
+          "taxi": {
+            "km": 4.068,
+            "min_low": 13,
+            "min_high": 17,
+            "thb_min": 10,
+            "thb_max": 20,
+            "label": "13–17 мин · 4,1 км · 10–20 £",
+            "label_en": "13–17 min · 4.1 km · £10–20"
+          },
+          "sort_km": 4.068,
+          "transit": {
+            "min": 38,
+            "description": "53 bus to Elephant & Castle / London Road; 133 bus to Monument Station; 22 мин пешком (1 пересадка) · ~£1.85 бесконтактно",
+            "description_en": "53 bus to Elephant & Castle / London Road; 133 bus to Monument Station; 22 min walk (1 change) · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 6.329463864393769,
+            "min": 81,
+            "practical": false,
+            "label": "далеко (~6,3 км)",
+            "label_en": "far (~6.3 km)"
+          },
+          "taxi": {
+            "km": 6.069,
+            "min_low": 15,
+            "min_high": 20,
+            "thb_min": 14,
+            "thb_max": 24,
+            "label": "15–20 мин · 6,1 км · 14–24 £",
+            "label_en": "15–20 min · 6.1 km · £14–24"
+          },
+          "sort_km": 6.069,
+          "transit": {
+            "min": 41,
+            "description": "Jubilee North Greenwich → London Bridge; 133 bus to Monument Station; 32 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → London Bridge; 133 bus to Monument Station; 32 min walk (1 change) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 38,
+        "description": "53 bus to Elephant & Castle / London Road; 133 bus to Monument Station; 22 мин пешком (1 пересадка) · ~£1.85 бесконтактно",
+        "description_en": "53 bus to Elephant & Castle / London Road; 133 bus to Monument Station; 22 min walk (1 change) · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "12159518736249087079",
+        "feature_id": "0x48760349331f38dd:0xa8bf49dde1d56467",
+        "maps_url": "https://www.google.com/maps/place/Tower+of+London/@51.5081,-0.0759,16z/data=!4m6!3m5!1s0x48760349331f38dd:0xa8bf49dde1d56467!8m2!3d51.5081124!4d-0.0759493!16zL20vMDducW4"
+      }
+    },
+    {
+      "id": "tower-bridge",
+      "name": "Tower Bridge",
+      "name_en": "Tower Bridge",
+      "name_ru": "Тауэрский мост",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Iconic Victorian bascule bridge.",
+      "description": "Iconic Victorian bascule bridge.",
+      "maps_url": "https://maps.google.com/?cid=11418949534774619949",
+      "lat": 51.5055,
+      "lng": -0.0754,
+      "sort_km": 3.778,
+      "walk": {
+        "km": 3.6835621278462787,
+        "min": 47,
+        "practical": false,
+        "label": "далеко (~3,7 км)",
+        "label_en": "far (~3.7 km)"
+      },
+      "taxi": {
+        "km": 3.778,
+        "min_low": 12,
+        "min_high": 16,
+        "thb_min": 10,
+        "thb_max": 20,
+        "label": "12–16 мин · 3,8 км · 10–20 £",
+        "label_en": "12–16 min · 3.8 km · £10–20"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 3.6835621278462787,
+            "min": 47,
+            "practical": false,
+            "label": "далеко (~3,7 км)",
+            "label_en": "far (~3.7 km)"
+          },
+          "taxi": {
+            "km": 3.778,
+            "min_low": 12,
+            "min_high": 16,
+            "thb_min": 10,
+            "thb_max": 20,
+            "label": "12–16 мин · 3,8 км · 10–20 £",
+            "label_en": "12–16 min · 3.8 km · £10–20"
+          },
+          "sort_km": 3.778,
+          "transit": {
+            "min": 35,
+            "description": "453 bus to Elephant & Castle / London Road; 188 bus to Druid Street; 17 мин пешком (1 пересадка) · ~£1.85 бесконтактно",
+            "description_en": "453 bus to Elephant & Castle / London Road; 188 bus to Druid Street; 17 min walk (1 change) · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 6.2562219889287345,
+            "min": 80,
+            "practical": false,
+            "label": "далеко (~6,3 км)",
+            "label_en": "far (~6.3 km)"
+          },
+          "taxi": {
+            "km": 6.361,
+            "min_low": 15,
+            "min_high": 21,
+            "thb_min": 15,
+            "thb_max": 25,
+            "label": "15–21 мин · 6,4 км · 15–25 £",
+            "label_en": "15–21 min · 6.4 km · £15–25"
+          },
+          "sort_km": 6.361,
+          "transit": {
+            "min": 35,
+            "description": "Jubilee North Greenwich → Bermondsey; 381 bus to Boss Street; 20 мин пешком (1 пересадка) · ~£4.05 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Bermondsey; 381 bus to Boss Street; 20 min walk (1 change) · ~£4.05 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 35,
+        "description": "453 bus to Elephant & Castle / London Road; 188 bus to Druid Street; 17 мин пешком (1 пересадка) · ~£1.85 бесконтактно",
+        "description_en": "453 bus to Elephant & Castle / London Road; 188 bus to Druid Street; 17 min walk (1 change) · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "11418949534774619949",
+        "feature_id": "0x487603438b65db49:0x9e78421a085a6f2d",
+        "maps_url": "https://www.google.com/maps/place/Tower+Bridge/@51.5055,-0.0754,16z/data=!4m6!3m5!1s0x487603438b65db49:0x9e78421a085a6f2d!8m2!3d51.5054564!4d-0.0753565!16zL20vMGdncDQ"
+      }
+    },
+    {
+      "id": "big-ben",
+      "name": "Palace of Westminster (Big Ben)",
+      "name_en": "Palace of Westminster (Big Ben)",
+      "name_ru": "Биг-Бен",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Parliament and the Elizabeth Tower.",
+      "description": "Parliament and the Elizabeth Tower.",
+      "maps_url": "https://maps.google.com/?cid=538596384900521852",
+      "lat": 51.5007,
+      "lng": -0.1246,
+      "sort_km": 0.5,
+      "walk": {
+        "km": 0.6317793020866203,
+        "min": 8,
+        "practical": true,
+        "label": "8 мин · 0,6 км",
+        "label_en": "8 min · 0.6 km"
+      },
+      "taxi": {
+        "km": 0.5,
+        "min_low": 1,
+        "min_high": 2,
+        "thb_min": 4,
+        "thb_max": 14,
+        "label": "1–2 мин · 0,5 км · 4–14 £",
+        "label_en": "1–2 min · 0.5 km · £4–14"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 0.6317793020866203,
+            "min": 8,
+            "practical": true,
+            "label": "8 мин · 0,6 км",
+            "label_en": "8 min · 0.6 km"
+          },
+          "taxi": {
+            "km": 0.5,
+            "min_low": 1,
+            "min_high": 2,
+            "thb_min": 4,
+            "thb_max": 14,
+            "label": "1–2 мин · 0,5 км · 4–14 £",
+            "label_en": "1–2 min · 0.5 km · £4–14"
+          },
+          "sort_km": 0.5,
+          "transit": {
+            "min": 11,
+            "description": "11 мин пешком",
+            "description_en": "11 min walk",
+            "mode": "transit"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 10.508642352692696,
+            "min": 134,
+            "practical": false,
+            "label": "далеко (~10,5 км)",
+            "label_en": "far (~10.5 km)"
+          },
+          "taxi": {
+            "km": 10.323,
+            "min_low": 27,
+            "min_high": 37,
+            "thb_min": 23,
+            "thb_max": 33,
+            "label": "27–37 мин · 10,3 км · 23–33 £",
+            "label_en": "27–37 min · 10.3 km · £23–33"
+          },
+          "sort_km": 10.323,
+          "transit": {
+            "min": 32,
+            "description": "Jubilee North Greenwich → Westminster; 21 мин пешком · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Westminster; 21 min walk · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 11,
+        "description": "11 мин пешком",
+        "description_en": "11 min walk",
+        "mode": "transit"
+      },
+      "google": {
+        "cid": "538596384900521852",
+        "feature_id": "0x487604c40c8d9b99:0x7797a8ef74e1f7c",
+        "maps_url": "https://www.google.com/maps/place/Palace+of+Westminster/@51.5007,-0.1246,16z/data=!4m6!3m5!1s0x487604c40c8d9b99:0x7797a8ef74e1f7c!8m2!3d51.4994794!4d-0.1248092!16zL20vMDYweWY"
+      }
+    },
+    {
+      "id": "buckingham-palace",
+      "name": "Buckingham Palace",
+      "name_en": "Buckingham Palace",
+      "name_ru": "Букингемский дворец",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Official London residence of the monarch.",
+      "description": "Official London residence of the monarch.",
+      "maps_url": "https://maps.google.com/?cid=731461058599387815",
+      "lat": 51.5014,
+      "lng": -0.1419,
+      "sort_km": 2.226,
+      "walk": {
+        "km": 2.1301112005239444,
+        "min": 27,
+        "practical": true,
+        "label": "27 мин · 2,1 км",
+        "label_en": "27 min · 2.1 km"
+      },
+      "taxi": {
+        "km": 2.226,
+        "min_low": 7,
+        "min_high": 9,
+        "thb_min": 6,
+        "thb_max": 16,
+        "label": "7–9 мин · 2,2 км · 6–16 £",
+        "label_en": "7–9 min · 2.2 km · £6–16"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 2.1301112005239444,
+            "min": 27,
+            "practical": true,
+            "label": "27 мин · 2,1 км",
+            "label_en": "27 min · 2.1 km"
+          },
+          "taxi": {
+            "km": 2.226,
+            "min_low": 7,
+            "min_high": 9,
+            "thb_min": 6,
+            "thb_max": 16,
+            "label": "7–9 мин · 2,2 км · 6–16 £",
+            "label_en": "7–9 min · 2.2 km · £6–16"
+          },
+          "sort_km": 2.226,
+          "transit": {
+            "min": 25,
+            "description": "11 bus to St James's Park Station; 18 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "11 bus to St James's Park Station; 18 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 12.002578205110625,
+            "min": 153,
+            "practical": false,
+            "label": "далеко (~12,0 км)",
+            "label_en": "far (~12.0 km)"
+          },
+          "taxi": {
+            "km": 11.478,
+            "min_low": 31,
+            "min_high": 42,
+            "thb_min": 25,
+            "thb_max": 35,
+            "label": "31–42 мин · 11,5 км · 25–35 £",
+            "label_en": "31–42 min · 11.5 km · £25–35"
+          },
+          "sort_km": 11.478,
+          "transit": {
+            "min": 44,
+            "description": "Jubilee North Greenwich → Green Park; 31 мин пешком · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Green Park; 31 min walk · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 25,
+        "description": "11 bus to St James's Park Station; 18 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "11 bus to St James's Park Station; 18 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "731461058599387815",
+        "feature_id": "0x48760520cd5b5eb5:0xa26abf514d902a7",
+        "maps_url": "https://www.google.com/maps/place/Buckingham+Palace/@51.5014,-0.1419,16z/data=!4m6!3m5!1s0x48760520cd5b5eb5:0xa26abf514d902a7!8m2!3d51.501364!4d-0.14189!16zL20vMDE5OGc"
+      }
+    },
+    {
+      "id": "st-pauls",
+      "name": "St Paul's Cathedral",
+      "name_en": "St Paul's Cathedral",
+      "name_ru": "Собор Святого Павла",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Wren's baroque cathedral on Ludgate Hill.",
+      "description": "Wren's baroque cathedral on Ludgate Hill.",
+      "maps_url": "https://maps.google.com/?cid=4187561509782511582",
+      "lat": 51.5138,
+      "lng": -0.0984,
+      "sort_km": 2.851,
+      "walk": {
+        "km": 2.436885355098926,
+        "min": 31,
+        "practical": true,
+        "label": "31 мин · 2,4 км",
+        "label_en": "31 min · 2.4 km"
+      },
+      "taxi": {
+        "km": 2.851,
+        "min_low": 9,
+        "min_high": 12,
+        "thb_min": 8,
+        "thb_max": 18,
+        "label": "9–12 мин · 2,9 км · 8–18 £",
+        "label_en": "9–12 min · 2.9 km · £8–18"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 2.436885355098926,
+            "min": 31,
+            "practical": true,
+            "label": "31 мин · 2,4 км",
+            "label_en": "31 min · 2.4 km"
+          },
+          "taxi": {
+            "km": 2.851,
+            "min_low": 9,
+            "min_high": 12,
+            "thb_min": 8,
+            "thb_max": 18,
+            "label": "9–12 мин · 2,9 км · 8–18 £",
+            "label_en": "9–12 min · 2.9 km · £8–18"
+          },
+          "sort_km": 2.851,
+          "transit": {
+            "min": 32,
+            "description": "76 bus to Ludgate Hill / Old Bailey; 17 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "76 bus to Ludgate Hill / Old Bailey; 17 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 8.371405418184604,
+            "min": 107,
+            "practical": false,
+            "label": "далеко (~8,4 км)",
+            "label_en": "far (~8.4 km)"
+          },
+          "taxi": {
+            "km": 7.746,
+            "min_low": 20,
+            "min_high": 27,
+            "thb_min": 17,
+            "thb_max": 27,
+            "label": "20–27 мин · 7,7 км · 17–27 £",
+            "label_en": "20–27 min · 7.7 km · £17–27"
+          },
+          "sort_km": 7.746,
+          "transit": {
+            "min": 38,
+            "description": "Jubilee North Greenwich → London Bridge; 133 bus to St. Paul's Station; 22 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → London Bridge; 133 bus to St. Paul's Station; 22 min walk (1 change) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 32,
+        "description": "76 bus to Ludgate Hill / Old Bailey; 17 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "76 bus to Ludgate Hill / Old Bailey; 17 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "4187561509782511582",
+        "feature_id": "0x487604aca207bc87:0x3a1d3501a9af5fde",
+        "maps_url": "https://www.google.com/maps/place/St.+Paul's+Cathedral/@51.5138,-0.0984,16z/data=!4m6!3m5!1s0x487604aca207bc87:0x3a1d3501a9af5fde!8m2!3d51.5138453!4d-0.0983506!16zL20vMHB3enQ"
+      }
+    },
+    {
+      "id": "british-museum",
+      "name": "British Museum",
+      "name_en": "British Museum",
+      "name_ru": "Британский музей",
+      "category": "culture",
+      "source": "added",
+      "description_en": "World cultures from Rosetta Stone to Parthenon sculptures.",
+      "description": "World cultures from Rosetta Stone to Parthenon sculptures.",
+      "maps_url": "https://maps.google.com/?cid=3436696222068785831",
+      "lat": 51.5194,
+      "lng": -0.127,
+      "sort_km": 2.887,
+      "walk": {
+        "km": 2.718049385557575,
+        "min": 35,
+        "practical": true,
+        "label": "35 мин · 2,7 км",
+        "label_en": "35 min · 2.7 km"
+      },
+      "taxi": {
+        "km": 2.887,
+        "min_low": 8,
+        "min_high": 11,
+        "thb_min": 8,
+        "thb_max": 18,
+        "label": "8–11 мин · 2,9 км · 8–18 £",
+        "label_en": "8–11 min · 2.9 km · £8–18"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 2.718049385557575,
+            "min": 35,
+            "practical": true,
+            "label": "35 мин · 2,7 км",
+            "label_en": "35 min · 2.7 km"
+          },
+          "taxi": {
+            "km": 2.887,
+            "min_low": 8,
+            "min_high": 11,
+            "thb_min": 8,
+            "thb_max": 18,
+            "label": "8–11 мин · 2,9 км · 8–18 £",
+            "label_en": "8–11 min · 2.9 km · £8–18"
+          },
+          "sort_km": 2.887,
+          "transit": {
+            "min": 33,
+            "description": "59 bus to Holborn Station; 25 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "59 bus to Holborn Station; 25 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 10.94914538193663,
+            "min": 140,
+            "practical": false,
+            "label": "далеко (~10,9 км)",
+            "label_en": "far (~10.9 km)"
+          },
+          "taxi": {
+            "km": 10.118,
+            "min_low": 27,
+            "min_high": 37,
+            "thb_min": 22,
+            "thb_max": 32,
+            "label": "27–37 мин · 10,1 км · 22–32 £",
+            "label_en": "27–37 min · 10.1 km · £22–32"
+          },
+          "sort_km": 10.118,
+          "transit": {
+            "min": 49,
+            "description": "Jubilee North Greenwich → Waterloo; 59 bus to Holborn Station; 31 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Waterloo; 59 bus to Holborn Station; 31 min walk (1 change) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 33,
+        "description": "59 bus to Holborn Station; 25 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "59 bus to Holborn Station; 25 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "3436696222068785831",
+        "feature_id": "0x48761b323093d307:0x2fb199016d5642a7",
+        "maps_url": "https://www.google.com/maps/place/The+British+Museum/@51.5194,-0.127,16z/data=!4m6!3m5!1s0x48761b323093d307:0x2fb199016d5642a7!8m2!3d51.5194133!4d-0.1269566!16zL20vMDFoYjM"
+      }
+    },
+    {
+      "id": "natural-history",
+      "name": "Natural History Museum",
+      "name_en": "Natural History Museum",
+      "name_ru": "Музей естествознания",
+      "category": "culture",
+      "source": "added",
+      "description_en": "Dinosaurs, wildlife, and earth science galleries.",
+      "description": "Dinosaurs, wildlife, and earth science galleries.",
+      "maps_url": "https://maps.google.com/?cid=8914844151054820548",
+      "lat": 51.4967,
+      "lng": -0.1764,
+      "sort_km": 5.48,
+      "walk": {
+        "km": 5.145457233729301,
+        "min": 66,
+        "practical": false,
+        "label": "далеко (~5,1 км)",
+        "label_en": "far (~5.1 km)"
+      },
+      "taxi": {
+        "km": 5.48,
+        "min_low": 17,
+        "min_high": 23,
+        "thb_min": 13,
+        "thb_max": 23,
+        "label": "17–23 мин · 5,5 км · 13–23 £",
+        "label_en": "17–23 min · 5.5 km · £13–23"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 5.145457233729301,
+            "min": 66,
+            "practical": false,
+            "label": "далеко (~5,1 км)",
+            "label_en": "far (~5.1 km)"
+          },
+          "taxi": {
+            "km": 5.48,
+            "min_low": 17,
+            "min_high": 23,
+            "thb_min": 13,
+            "thb_max": 23,
+            "label": "17–23 мин · 5,5 км · 13–23 £",
+            "label_en": "17–23 min · 5.5 km · £13–23"
+          },
+          "sort_km": 5.48,
+          "transit": {
+            "min": 39,
+            "description": "District Westminster → South Kensington; 32 мин пешком · ~£3.00 бесконтактно",
+            "description_en": "District Westminster → South Kensington; 32 min walk · ~£3.00 contactless",
+            "mode": "tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 15.011838357188696,
+            "min": 192,
+            "practical": false,
+            "label": "далеко (~15,0 км)",
+            "label_en": "far (~15.0 km)"
+          },
+          "taxi": {
+            "km": 14.852,
+            "min_low": 41,
+            "min_high": 56,
+            "thb_min": 32,
+            "thb_max": 46,
+            "label": "41–56 мин · 14,9 км · 32–46 £",
+            "label_en": "41–56 min · 14.9 km · £32–46"
+          },
+          "sort_km": 14.852,
+          "transit": {
+            "min": 50,
+            "description": "Jubilee North Greenwich → Westminster; District Westminster → South Kensington; 70 bus to Imperial College / Elvaston Pl; 17 мин пешком (2 пересадкаs) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Westminster; District Westminster → South Kensington; 70 bus to Imperial College / Elvaston Pl; 17 min walk (2 changes) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 39,
+        "description": "District Westminster → South Kensington; 32 мин пешком · ~£3.00 бесконтактно",
+        "description_en": "District Westminster → South Kensington; 32 min walk · ~£3.00 contactless",
+        "mode": "tube"
+      },
+      "google": {
+        "cid": "8914844151054820548",
+        "feature_id": "0x48760542e6182f3f:0x7bb7e385c39764c4",
+        "maps_url": "https://www.google.com/maps/place/Natural+History+Museum/@51.4967,-0.1764,16z/data=!4m6!3m5!1s0x48760542e6182f3f:0x7bb7e385c39764c4!8m2!3d51.496715!4d-0.1763672!16zL20vMDF0Mzcy"
+      }
+    },
+    {
+      "id": "tate-modern",
+      "name": "Tate Modern",
+      "name_en": "Tate Modern",
+      "name_ru": "Тейт Модерн",
+      "category": "culture",
+      "source": "added",
+      "description_en": "Modern art in a former Bankside power station.",
+      "description": "Modern art in a former Bankside power station.",
+      "maps_url": "https://maps.google.com/?cid=2304839309186538471",
+      "lat": 51.5076,
+      "lng": -0.0994,
+      "sort_km": 2.281,
+      "walk": {
+        "km": 1.814300306044723,
+        "min": 23,
+        "practical": true,
+        "label": "23 мин · 1,8 км",
+        "label_en": "23 min · 1.8 km"
+      },
+      "taxi": {
+        "km": 2.281,
+        "min_low": 7,
+        "min_high": 10,
+        "thb_min": 7,
+        "thb_max": 17,
+        "label": "7–10 мин · 2,3 км · 7–17 £",
+        "label_en": "7–10 min · 2.3 km · £7–17"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 1.814300306044723,
+            "min": 23,
+            "practical": true,
+            "label": "23 мин · 1,8 км",
+            "label_en": "23 min · 1.8 km"
+          },
+          "taxi": {
+            "km": 2.281,
+            "min_low": 7,
+            "min_high": 10,
+            "thb_min": 7,
+            "thb_max": 17,
+            "label": "7–10 мин · 2,3 км · 7–17 £",
+            "label_en": "7–10 min · 2.3 km · £7–17"
+          },
+          "sort_km": 2.281,
+          "transit": {
+            "min": 26,
+            "description": "381 bus to Blackfriars Road; 18 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "381 bus to Blackfriars Road; 18 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 8.347315449461115,
+            "min": 107,
+            "practical": false,
+            "label": "далеко (~8,3 км)",
+            "label_en": "far (~8.3 km)"
+          },
+          "taxi": {
+            "km": 8.325,
+            "min_low": 22,
+            "min_high": 29,
+            "thb_min": 19,
+            "thb_max": 29,
+            "label": "22–29 мин · 8,3 км · 19–29 £",
+            "label_en": "22–29 min · 8.3 km · £19–29"
+          },
+          "sort_km": 8.325,
+          "transit": {
+            "min": 38,
+            "description": "Jubilee North Greenwich → London Bridge; 32 мин пешком · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → London Bridge; 32 min walk · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 26,
+        "description": "381 bus to Blackfriars Road; 18 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "381 bus to Blackfriars Road; 18 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "2304839309186538471",
+        "feature_id": "0x487604a931761995:0x1ffc6f23e06b9be7",
+        "maps_url": "https://www.google.com/maps/place/Tate+Modern/@51.5076,-0.0994,16z/data=!4m6!3m5!1s0x487604a931761995:0x1ffc6f23e06b9be7!8m2!3d51.5075953!4d-0.0993564!16zL20vMDduYjU"
+      }
+    },
+    {
+      "id": "v-and-a",
+      "name": "Victoria and Albert Museum",
+      "name_en": "Victoria and Albert Museum",
+      "name_ru": "Музей Виктории и Альберта",
+      "category": "culture",
+      "source": "added",
+      "description_en": "Decorative arts, design, and fashion.",
+      "description": "Decorative arts, design, and fashion.",
+      "maps_url": "https://maps.google.com/?cid=11436620009305892127",
+      "lat": 51.4966,
+      "lng": -0.1722,
+      "sort_km": 4.761,
+      "walk": {
+        "km": 4.7861255037043495,
+        "min": 61,
+        "practical": false,
+        "label": "далеко (~4,8 км)",
+        "label_en": "far (~4.8 km)"
+      },
+      "taxi": {
+        "km": 4.761,
+        "min_low": 14,
+        "min_high": 20,
+        "thb_min": 12,
+        "thb_max": 22,
+        "label": "14–20 мин · 4,8 км · 12–22 £",
+        "label_en": "14–20 min · 4.8 km · £12–22"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 4.7861255037043495,
+            "min": 61,
+            "practical": false,
+            "label": "далеко (~4,8 км)",
+            "label_en": "far (~4.8 km)"
+          },
+          "taxi": {
+            "km": 4.761,
+            "min_low": 14,
+            "min_high": 20,
+            "thb_min": 12,
+            "thb_max": 22,
+            "label": "14–20 мин · 4,8 км · 12–22 £",
+            "label_en": "14–20 min · 4.8 km · £12–22"
+          },
+          "sort_km": 4.761,
+          "transit": {
+            "min": 28,
+            "description": "District Westminster → South Kensington; 21 мин пешком · ~£3.00 бесконтактно",
+            "description_en": "District Westminster → South Kensington; 21 min walk · ~£3.00 contactless",
+            "mode": "tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 14.649917494227552,
+            "min": 187,
+            "practical": false,
+            "label": "далеко (~14,6 км)",
+            "label_en": "far (~14.6 km)"
+          },
+          "taxi": {
+            "km": 14.295,
+            "min_low": 39,
+            "min_high": 53,
+            "thb_min": 31,
+            "thb_max": 44,
+            "label": "39–53 мин · 14,3 км · 31–44 £",
+            "label_en": "39–53 min · 14.3 km · £31–44"
+          },
+          "sort_km": 14.295,
+          "transit": {
+            "min": 43,
+            "description": "Jubilee North Greenwich → Westminster; District Westminster → South Kensington; 17 мин пешком (1 пересадка) · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Westminster; District Westminster → South Kensington; 17 min walk (1 change) · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 28,
+        "description": "District Westminster → South Kensington; 21 мин пешком · ~£3.00 бесконтактно",
+        "description_en": "District Westminster → South Kensington; 21 min walk · ~£3.00 contactless",
+        "mode": "tube"
+      },
+      "google": {
+        "cid": "11436620009305892127",
+        "feature_id": "0x48760543b17e57c3:0x9eb7094dfdcd651f",
+        "maps_url": "https://www.google.com/maps/place/Victoria+and+Albert+Museum/@51.4966,-0.1722,16z/data=!4m6!3m5!1s0x48760543b17e57c3:0x9eb7094dfdcd651f!8m2!3d51.4966392!4d-0.17218!16zL20vMHAxdHg"
+      }
+    },
+    {
+      "id": "hyde-park",
+      "name": "Hyde Park",
+      "name_en": "Hyde Park",
+      "name_ru": "Гайд-парк",
+      "category": "parks",
+      "source": "added",
+      "description_en": "Large royal park with Serpentine lake.",
+      "description": "Large royal park with Serpentine lake.",
+      "maps_url": "https://maps.google.com/?cid=15109414362646101260",
+      "lat": 51.5073,
+      "lng": -0.1657,
+      "sort_km": 5.865,
+      "walk": {
+        "km": 4.28381961563706,
+        "min": 55,
+        "practical": false,
+        "label": "далеко (~4,3 км)",
+        "label_en": "far (~4.3 km)"
+      },
+      "taxi": {
+        "km": 5.865,
+        "min_low": 18,
+        "min_high": 25,
+        "thb_min": 14,
+        "thb_max": 24,
+        "label": "18–25 мин · 5,9 км · 14–24 £",
+        "label_en": "18–25 min · 5.9 km · £14–24"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 4.28381961563706,
+            "min": 55,
+            "practical": false,
+            "label": "далеко (~4,3 км)",
+            "label_en": "far (~4.3 km)"
+          },
+          "taxi": {
+            "km": 5.865,
+            "min_low": 18,
+            "min_high": 25,
+            "thb_min": 14,
+            "thb_max": 24,
+            "label": "18–25 мин · 5,9 км · 14–24 £",
+            "label_en": "18–25 min · 5.9 km · £14–24"
+          },
+          "sort_km": 5.865,
+          "transit": {
+            "min": 39,
+            "description": "148 bus to Dorchester Hotel; 19 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "148 bus to Dorchester Hotel; 19 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 14.071514535254092,
+            "min": 180,
+            "practical": false,
+            "label": "далеко (~14,1 км)",
+            "label_en": "far (~14.1 km)"
+          },
+          "taxi": {
+            "km": 14.886,
+            "min_low": 42,
+            "min_high": 57,
+            "thb_min": 32,
+            "thb_max": 46,
+            "label": "42–57 мин · 14,9 км · 32–46 £",
+            "label_en": "42–57 min · 14.9 km · £32–46"
+          },
+          "sort_km": 14.886,
+          "transit": {
+            "min": 51,
+            "description": "Jubilee North Greenwich → Green Park; Piccadilly Green Park → Knightsbridge; 30 мин пешком (1 пересадка) · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Green Park; Piccadilly Green Park → Knightsbridge; 30 min walk (1 change) · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 39,
+        "description": "148 bus to Dorchester Hotel; 19 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "148 bus to Dorchester Hotel; 19 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "15109414362646101260",
+        "feature_id": "0x4876054929181a85:0xd1af6c4f49b4bd0c",
+        "maps_url": "https://www.google.com/maps/place/Hyde+Park/@51.5073,-0.1657,16z/data=!4m6!3m5!1s0x4876054929181a85:0xd1af6c4f49b4bd0c!8m2!3d51.5073638!4d-0.1641135!16zL20vMDFkXzBw"
+      }
+    },
+    {
+      "id": "regents-park",
+      "name": "Regent's Park",
+      "name_en": "Regent's Park",
+      "name_ru": "Риджентс-парк",
+      "category": "parks",
+      "source": "added",
+      "description_en": "Gardens, zoo, and open green space.",
+      "description": "Gardens, zoo, and open green space.",
+      "maps_url": "https://maps.google.com/?cid=619313186053167294",
+      "lat": 51.5313,
+      "lng": -0.1569,
+      "sort_km": 5.231,
+      "walk": {
+        "km": 5.45011536537009,
+        "min": 70,
+        "practical": false,
+        "label": "далеко (~5,5 км)",
+        "label_en": "far (~5.5 km)"
+      },
+      "taxi": {
+        "km": 5.231,
+        "min_low": 16,
+        "min_high": 21,
+        "thb_min": 12,
+        "thb_max": 22,
+        "label": "16–21 мин · 5,2 км · 12–22 £",
+        "label_en": "16–21 min · 5.2 km · £12–22"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 5.45011536537009,
+            "min": 70,
+            "practical": false,
+            "label": "далеко (~5,5 км)",
+            "label_en": "far (~5.5 km)"
+          },
+          "taxi": {
+            "km": 5.231,
+            "min_low": 16,
+            "min_high": 21,
+            "thb_min": 12,
+            "thb_max": 22,
+            "label": "16–21 мин · 5,2 км · 12–22 £",
+            "label_en": "16–21 min · 5.2 km · £12–22"
+          },
+          "sort_km": 5.231,
+          "transit": {
+            "min": 49,
+            "description": "Bakerloo Lambeth North → Regent's Park; 39 мин пешком · ~£3.00 бесконтактно",
+            "description_en": "Bakerloo Lambeth North → Regent's Park; 39 min walk · ~£3.00 contactless",
+            "mode": "tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 13.863705849455666,
+            "min": 177,
+            "practical": false,
+            "label": "далеко (~13,9 км)",
+            "label_en": "far (~13.9 km)"
+          },
+          "taxi": {
+            "km": 13.179,
+            "min_low": 36,
+            "min_high": 49,
+            "thb_min": 28,
+            "thb_max": 41,
+            "label": "36–49 мин · 13,2 км · 28–41 £",
+            "label_en": "36–49 min · 13.2 km · £28–41"
+          },
+          "sort_km": 13.179,
+          "transit": {
+            "min": 53,
+            "description": "Jubilee North Greenwich → Baker Street; 274 bus to Eamont Street; 22 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Baker Street; 274 bus to Eamont Street; 22 min walk (1 change) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 49,
+        "description": "Bakerloo Lambeth North → Regent's Park; 39 мин пешком · ~£3.00 бесконтактно",
+        "description_en": "Bakerloo Lambeth North → Regent's Park; 39 min walk · ~£3.00 contactless",
+        "mode": "tube"
+      },
+      "google": {
+        "cid": "619313186053167294",
+        "feature_id": "0x48761ac3b0b3be07:0x8983e0fbb6a18be",
+        "maps_url": "https://www.google.com/maps/place/The+Regent's+Park/@51.5313,-0.1569,16z/data=!4m6!3m5!1s0x48761ac3b0b3be07:0x8983e0fbb6a18be!8m2!3d51.533313!4d-0.1557646!16zL20vMDFscGc2"
+      }
+    },
+    {
+      "id": "greenwich-park",
+      "name": "Greenwich Park",
+      "name_en": "Greenwich Park",
+      "name_ru": "Гринвичский парк",
+      "category": "parks",
+      "source": "added",
+      "description_en": "Views to Canary Wharf and the Royal Observatory.",
+      "description": "Views to Canary Wharf and the Royal Observatory.",
+      "maps_url": "https://maps.google.com/?cid=1011982340482096336",
+      "lat": 51.4746,
+      "lng": -0.0005,
+      "sort_km": 10.064,
+      "walk": {
+        "km": 10.744842655795006,
+        "min": 137,
+        "practical": false,
+        "label": "далеко (~10,7 км)",
+        "label_en": "far (~10.7 km)"
+      },
+      "taxi": {
+        "km": 10.064,
+        "min_low": 27,
+        "min_high": 36,
+        "thb_min": 22,
+        "thb_max": 32,
+        "label": "27–36 мин · 10,1 км · 22–32 £",
+        "label_en": "27–36 min · 10.1 km · £22–32"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 10.744842655795006,
+            "min": 137,
+            "practical": false,
+            "label": "далеко (~10,7 км)",
+            "label_en": "far (~10.7 km)"
+          },
+          "taxi": {
+            "km": 10.064,
+            "min_low": 27,
+            "min_high": 36,
+            "thb_min": 22,
+            "thb_max": 32,
+            "label": "27–36 мин · 10,1 км · 22–32 £",
+            "label_en": "27–36 min · 10.1 km · £22–32"
+          },
+          "sort_km": 10.064,
+          "transit": {
+            "min": 50,
+            "description": "53 bus to Greenwich Park; 12 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "53 bus to Greenwich Park; 12 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 3.9543303517100856,
+            "min": 50,
+            "practical": false,
+            "label": "далеко (~4,0 км)",
+            "label_en": "far (~4.0 km)"
+          },
+          "taxi": {
+            "km": 8.791,
+            "min_low": 14,
+            "min_high": 20,
+            "thb_min": 20,
+            "thb_max": 30,
+            "label": "14–20 мин · 8,8 км · 20–30 £",
+            "label_en": "14–20 min · 8.8 km · £20–30"
+          },
+          "sort_km": 8.791,
+          "transit": {
+            "min": 45,
+            "description": "188 bus to Greenwich Church Street; 30 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "188 bus to Greenwich Church Street; 30 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 50,
+        "description": "53 bus to Greenwich Park; 12 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "53 bus to Greenwich Park; 12 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "1011982340482096336",
+        "feature_id": "0x487602849e18e569:0xe0b4893b3675cd0",
+        "maps_url": "https://www.google.com/maps/place/Greenwich+Park/@51.4746,-0.0005,16z/data=!4m6!3m5!1s0x487602849e18e569:0xe0b4893b3675cd0!8m2!3d51.4769095!4d0.0014643!16zL20vMDF4NnQy"
+      }
+    },
+    {
+      "id": "borough-market",
+      "name": "Borough Market",
+      "name_en": "Borough Market",
+      "name_ru": "Боро-маркет",
+      "category": "markets",
+      "source": "added",
+      "description_en": "Historic food market near London Bridge.",
+      "description": "Historic food market near London Bridge.",
+      "maps_url": "https://maps.google.com/?cid=3542336080288171193",
+      "lat": 51.5054,
+      "lng": -0.0911,
+      "sort_km": 2.481,
+      "walk": {
+        "km": 2.3552601836544094,
+        "min": 30,
+        "practical": true,
+        "label": "30 мин · 2,4 км",
+        "label_en": "30 min · 2.4 km"
+      },
+      "taxi": {
+        "km": 2.481,
+        "min_low": 8,
+        "min_high": 11,
+        "thb_min": 7,
+        "thb_max": 17,
+        "label": "8–11 мин · 2,5 км · 7–17 £",
+        "label_en": "8–11 min · 2.5 km · £7–17"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 2.3552601836544094,
+            "min": 30,
+            "practical": true,
+            "label": "30 мин · 2,4 км",
+            "label_en": "30 min · 2.4 km"
+          },
+          "taxi": {
+            "km": 2.481,
+            "min_low": 8,
+            "min_high": 11,
+            "thb_min": 7,
+            "thb_max": 17,
+            "label": "8–11 мин · 2,5 км · 7–17 £",
+            "label_en": "8–11 min · 2.5 km · £7–17"
+          },
+          "sort_km": 2.481,
+          "transit": {
+            "min": 25,
+            "description": "381 bus to The Hop Exchange; 13 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "381 bus to The Hop Exchange; 13 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 7.612210435227496,
+            "min": 97,
+            "practical": false,
+            "label": "далеко (~7,6 км)",
+            "label_en": "far (~7.6 km)"
+          },
+          "taxi": {
+            "km": 7.724,
+            "min_low": 20,
+            "min_high": 27,
+            "thb_min": 17,
+            "thb_max": 27,
+            "label": "20–27 мин · 7,7 км · 17–27 £",
+            "label_en": "20–27 min · 7.7 km · £17–27"
+          },
+          "sort_km": 7.724,
+          "transit": {
+            "min": 28,
+            "description": "Jubilee North Greenwich → London Bridge; 22 мин пешком · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → London Bridge; 22 min walk · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 25,
+        "description": "381 bus to The Hop Exchange; 13 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "381 bus to The Hop Exchange; 13 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "3542336080288171193",
+        "feature_id": "0x4876035775cf660f:0x3128e7e59ca044b9",
+        "maps_url": "https://www.google.com/maps/place/Borough+Market/@51.5054,-0.0911,16z/data=!4m6!3m5!1s0x4876035775cf660f:0x3128e7e59ca044b9!8m2!3d51.5055826!4d-0.0904808!16zL20vMDF6cDZ2"
+      }
+    },
+    {
+      "id": "camden-market",
+      "name": "Camden Market",
+      "name_en": "Camden Market",
+      "name_ru": "Камден-маркет",
+      "category": "markets",
+      "source": "added",
+      "description_en": "Stalls and street food by the Regent's Canal.",
+      "description": "Stalls and street food by the Regent's Canal.",
+      "maps_url": "https://maps.google.com/?cid=6916894407404599896",
+      "lat": 51.5413,
+      "lng": -0.1467,
+      "sort_km": 5.853,
+      "walk": {
+        "km": 6.176858744789642,
+        "min": 79,
+        "practical": false,
+        "label": "далеко (~6,2 км)",
+        "label_en": "far (~6.2 km)"
+      },
+      "taxi": {
+        "km": 5.853,
+        "min_low": 18,
+        "min_high": 24,
+        "thb_min": 14,
+        "thb_max": 24,
+        "label": "18–24 мин · 5,9 км · 14–24 £",
+        "label_en": "18–24 min · 5.9 km · £14–24"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 6.176858744789642,
+            "min": 79,
+            "practical": false,
+            "label": "далеко (~6,2 км)",
+            "label_en": "far (~6.2 km)"
+          },
+          "taxi": {
+            "km": 5.853,
+            "min_low": 18,
+            "min_high": 24,
+            "thb_min": 14,
+            "thb_max": 24,
+            "label": "18–24 мин · 5,9 км · 14–24 £",
+            "label_en": "18–24 min · 5.9 km · £14–24"
+          },
+          "sort_km": 5.853,
+          "transit": {
+            "min": 40,
+            "description": "Northern Waterloo → Camden Town; 28 мин пешком · ~£3.10 бесконтактно",
+            "description_en": "Northern Waterloo → Camden Town; 28 min walk · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 13.50395498198121,
+            "min": 172,
+            "practical": false,
+            "label": "далеко (~13,5 км)",
+            "label_en": "far (~13.5 km)"
+          },
+          "taxi": {
+            "km": 13.084,
+            "min_low": 36,
+            "min_high": 49,
+            "thb_min": 28,
+            "thb_max": 40,
+            "label": "36–49 мин · 13,1 км · 28–40 £",
+            "label_en": "36–49 min · 13.1 km · £28–40"
+          },
+          "sort_km": 13.084,
+          "transit": {
+            "min": 53,
+            "description": "Jubilee North Greenwich → Waterloo; Northern Waterloo → Camden Town; 24 мин пешком (1 пересадка) · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Waterloo; Northern Waterloo → Camden Town; 24 min walk (1 change) · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 40,
+        "description": "Northern Waterloo → Camden Town; 28 мин пешком · ~£3.10 бесконтактно",
+        "description_en": "Northern Waterloo → Camden Town; 28 min walk · ~£3.10 contactless",
+        "mode": "tube"
+      },
+      "google": {
+        "cid": "6916894407404599896",
+        "feature_id": "0x48761b1c5f1a9429:0x5ffdbed0f63cba58",
+        "maps_url": "https://www.google.com/maps/place/Camden+Town,+London,+UK/@51.5413,-0.1467,16z/data=!4m6!3m5!1s0x48761b1c5f1a9429:0x5ffdbed0f63cba58!8m2!3d51.5390261!4d-0.1425516!16zL20vMG5xcDM"
+      }
+    },
+    {
+      "id": "sky-garden",
+      "name": "Sky Garden",
+      "name_en": "Sky Garden",
+      "name_ru": "Sky Garden",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Free public garden atop the Walkie-Talkie (booking required).",
+      "description": "Free public garden atop the Walkie-Talkie (booking required).",
+      "maps_url": "https://maps.google.com/?cid=15354298128763884164",
+      "lat": 51.5112,
+      "lng": -0.0837,
+      "sort_km": 3.344,
+      "walk": {
+        "km": 3.246459921739974,
+        "min": 41,
+        "practical": true,
+        "label": "41 мин · 3,2 км",
+        "label_en": "41 min · 3.2 km"
+      },
+      "taxi": {
+        "km": 3.344,
+        "min_low": 10,
+        "min_high": 14,
+        "thb_min": 9,
+        "thb_max": 19,
+        "label": "10–14 мин · 3,3 км · 9–19 £",
+        "label_en": "10–14 min · 3.3 km · £9–19"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 3.246459921739974,
+            "min": 41,
+            "practical": true,
+            "label": "41 мин · 3,2 км",
+            "label_en": "41 min · 3.2 km"
+          },
+          "taxi": {
+            "km": 3.344,
+            "min_low": 10,
+            "min_high": 14,
+            "thb_min": 9,
+            "thb_max": 19,
+            "label": "10–14 мин · 3,3 км · 9–19 £",
+            "label_en": "10–14 min · 3.3 km · £9–19"
+          },
+          "sort_km": 3.344,
+          "transit": {
+            "min": 30,
+            "description": "Waterloo & City Waterloo → Bank; 26 мин пешком · ~£3.00 бесконтактно",
+            "description_en": "Waterloo & City Waterloo → Bank; 26 min walk · ~£3.00 contactless",
+            "mode": "tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 7.056872113943183,
+            "min": 90,
+            "practical": false,
+            "label": "далеко (~7,1 км)",
+            "label_en": "far (~7.1 km)"
+          },
+          "taxi": {
+            "km": 6.779,
+            "min_low": 17,
+            "min_high": 23,
+            "thb_min": 16,
+            "thb_max": 26,
+            "label": "17–23 мин · 6,8 км · 16–26 £",
+            "label_en": "17–23 min · 6.8 km · £16–26"
+          },
+          "sort_km": 6.779,
+          "transit": {
+            "min": 35,
+            "description": "Jubilee North Greenwich → London Bridge; 29 мин пешком · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → London Bridge; 29 min walk · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 30,
+        "description": "Waterloo & City Waterloo → Bank; 26 мин пешком · ~£3.00 бесконтактно",
+        "description_en": "Waterloo & City Waterloo → Bank; 26 min walk · ~£3.00 contactless",
+        "mode": "tube"
+      },
+      "google": {
+        "cid": "15354298128763884164",
+        "feature_id": "0x487603526c3ca281:0xd5156ccc2c6a9284",
+        "maps_url": "https://www.google.com/maps/place/Sky+Garden/@51.5112,-0.0837,16z/data=!4m6!3m5!1s0x487603526c3ca281:0xd5156ccc2c6a9284!8m2!3d51.5112422!4d-0.0835493!16s%2Fg%2F1q4knz5th"
+      }
+    },
+    {
+      "id": "primrose-hill",
+      "name": "Primrose Hill",
+      "name_en": "Primrose Hill",
+      "name_ru": "Примроуз-хилл",
+      "category": "sights",
+      "source": "added",
+      "description_en": "Panorama over the city skyline.",
+      "description": "Panorama over the city skyline.",
+      "maps_url": "https://maps.google.com/?cid=12957738296892987545",
+      "google": {
+        "cid": "12957738296892987545",
+        "feature_id": "0x48761aeecce35ee9:0xb3d32253f6c81899"
+      },
+      "lat": 51.5412572,
+      "lng": -0.1533169,
+      "sort_km": 6.411,
+      "walk": {
+        "km": 6.5600881999684955,
+        "min": 84,
+        "practical": false,
+        "label": "далеко (~6,6 км)",
+        "label_en": "far (~6.6 km)"
+      },
+      "taxi": {
+        "km": 6.411,
+        "min_low": 19,
+        "min_high": 26,
+        "thb_min": 15,
+        "thb_max": 25,
+        "label": "19–26 мин · 6,4 км · 15–25 £",
+        "label_en": "19–26 min · 6.4 km · £15–25"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 6.5600881999684955,
+            "min": 84,
+            "practical": false,
+            "label": "далеко (~6,6 км)",
+            "label_en": "far (~6.6 km)"
+          },
+          "taxi": {
+            "km": 6.411,
+            "min_low": 19,
+            "min_high": 26,
+            "thb_min": 15,
+            "thb_max": 25,
+            "label": "19–26 мин · 6,4 км · 15–25 £",
+            "label_en": "19–26 min · 6.4 km · £15–25"
+          },
+          "sort_km": 6.411,
+          "transit": {
+            "min": 47,
+            "description": "Bakerloo Lambeth North → Baker Street; 274 bus to Primrose Hill / ZSL London Zoo; 20 мин пешком (1 пересадка) · ~£4.85 бесконтактно",
+            "description_en": "Bakerloo Lambeth North → Baker Street; 274 bus to Primrose Hill / ZSL London Zoo; 20 min walk (1 change) · ~£4.85 contactless",
+            "mode": "tube,bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 14.577859174237213,
+            "min": 186,
+            "practical": false,
+            "label": "далеко (~14,6 км)",
+            "label_en": "far (~14.6 km)"
+          },
+          "taxi": {
+            "km": 13.642,
+            "min_low": 38,
+            "min_high": 51,
+            "thb_min": 29,
+            "thb_max": 42,
+            "label": "38–51 мин · 13,6 км · 29–42 £",
+            "label_en": "38–51 min · 13.6 km · £29–42"
+          },
+          "sort_km": 13.642,
+          "transit": {
+            "min": 52,
+            "description": "Jubilee North Greenwich → Baker Street; 274 bus to Primrose Hill / ZSL London Zoo; 18 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Baker Street; 274 bus to Primrose Hill / ZSL London Zoo; 18 min walk (1 change) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 47,
+        "description": "Bakerloo Lambeth North → Baker Street; 274 bus to Primrose Hill / ZSL London Zoo; 20 мин пешком (1 пересадка) · ~£4.85 бесконтактно",
+        "description_en": "Bakerloo Lambeth North → Baker Street; 274 bus to Primrose Hill / ZSL London Zoo; 20 min walk (1 change) · ~£4.85 contactless",
+        "mode": "tube,bus"
+      }
+    },
+    {
+      "id": "rules-restaurant",
+      "name": "Rules Restaurant",
+      "name_en": "Rules Restaurant",
+      "name_ru": "Ресторан Rules",
+      "category": "food",
+      "source": "added",
+      "description_en": "Oldest restaurant in London (since 1798).",
+      "description": "Oldest restaurant in London (since 1798).",
+      "maps_url": "https://maps.google.com/?cid=13163184803110165730",
+      "lat": 51.5107,
+      "lng": -0.1232,
+      "sort_km": 2.068,
+      "walk": {
+        "km": 1.4676593243475407,
+        "min": 19,
+        "practical": true,
+        "label": "19 мин · 1,5 км",
+        "label_en": "19 min · 1.5 km"
+      },
+      "taxi": {
+        "km": 2.068,
+        "min_low": 7,
+        "min_high": 9,
+        "thb_min": 6,
+        "thb_max": 16,
+        "label": "7–9 мин · 2,1 км · 6–16 £",
+        "label_en": "7–9 min · 2.1 km · £6–16"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 1.4676593243475407,
+            "min": 19,
+            "practical": true,
+            "label": "19 мин · 1,5 км",
+            "label_en": "19 min · 1.5 km"
+          },
+          "taxi": {
+            "km": 2.068,
+            "min_low": 7,
+            "min_high": 9,
+            "thb_min": 6,
+            "thb_max": 16,
+            "label": "7–9 мин · 2,1 км · 6–16 £",
+            "label_en": "7–9 min · 2.1 km · £6–16"
+          },
+          "sort_km": 2.068,
+          "transit": {
+            "min": 24,
+            "description": "1 bus to Lancaster Place; 21 мин пешком · ~£1.85 бесконтактно",
+            "description_en": "1 bus to Lancaster Place; 21 min walk · ~£1.85 contactless",
+            "mode": "bus"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 10.436529930257066,
+            "min": 133,
+            "practical": false,
+            "label": "далеко (~10,4 км)",
+            "label_en": "far (~10.4 km)"
+          },
+          "taxi": {
+            "km": 10.478,
+            "min_low": 28,
+            "min_high": 38,
+            "thb_min": 23,
+            "thb_max": 33,
+            "label": "28–38 мин · 10,5 км · 23–33 £",
+            "label_en": "28–38 min · 10.5 km · £23–33"
+          },
+          "sort_km": 10.478,
+          "transit": {
+            "min": 40,
+            "description": "Jubilee North Greenwich → Waterloo; 176 bus to Savoy Street; 25 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Waterloo; 176 bus to Savoy Street; 25 min walk (1 change) · ~£4.95 contactless",
+            "mode": "tube,bus"
+          }
+        }
+      },
+      "transit": {
+        "min": 24,
+        "description": "1 bus to Lancaster Place; 21 мин пешком · ~£1.85 бесконтактно",
+        "description_en": "1 bus to Lancaster Place; 21 min walk · ~£1.85 contactless",
+        "mode": "bus"
+      },
+      "google": {
+        "cid": "13163184803110165730",
+        "feature_id": "0x487604cae7c2496d:0xb6ad06d63e339ce2",
+        "maps_url": "https://www.google.com/maps/place/Rules/@51.5107,-0.1232,16z/data=!4m6!3m5!1s0x487604cae7c2496d:0xb6ad06d63e339ce2!8m2!3d51.510833!4d-0.1231694!16s%2Fm%2F0dgscxr"
+      }
+    },
+    {
+      "id": "dishoom-covent",
+      "name": "Dishoom Covent Garden",
+      "name_en": "Dishoom Covent Garden",
+      "name_ru": "Dishoom Covent Garden",
+      "category": "cafe",
+      "source": "added",
+      "description_en": "Bombay-style café chain, popular brunch spot.",
+      "description": "Bombay-style café chain, popular brunch spot.",
+      "maps_url": "https://maps.google.com/?cid=11256896404490944630",
+      "lat": 51.5125,
+      "lng": -0.1269,
+      "sort_km": 2.324,
+      "walk": {
+        "km": 1.8260287963186124,
+        "min": 23,
+        "practical": true,
+        "label": "23 мин · 1,8 км",
+        "label_en": "23 min · 1.8 km"
+      },
+      "taxi": {
+        "km": 2.324,
+        "min_low": 7,
+        "min_high": 10,
+        "thb_min": 7,
+        "thb_max": 17,
+        "label": "7–10 мин · 2,3 км · 7–17 £",
+        "label_en": "7–10 min · 2.3 km · £7–17"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 1.8260287963186124,
+            "min": 23,
+            "practical": true,
+            "label": "23 мин · 1,8 км",
+            "label_en": "23 min · 1.8 km"
+          },
+          "taxi": {
+            "km": 2.324,
+            "min_low": 7,
+            "min_high": 10,
+            "thb_min": 7,
+            "thb_max": 17,
+            "label": "7–10 мин · 2,3 км · 7–17 £",
+            "label_en": "7–10 min · 2.3 km · £7–17"
+          },
+          "sort_km": 2.324,
+          "transit": {
+            "min": 30,
+            "description": "Northern Waterloo → Leicester Square; 26 мин пешком · ~£3.00 бесконтактно",
+            "description_en": "Northern Waterloo → Leicester Square; 26 min walk · ~£3.00 contactless",
+            "mode": "tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 10.782550038051681,
+            "min": 138,
+            "practical": false,
+            "label": "далеко (~10,8 км)",
+            "label_en": "far (~10.8 km)"
+          },
+          "taxi": {
+            "km": 10.131,
+            "min_low": 27,
+            "min_high": 37,
+            "thb_min": 22,
+            "thb_max": 32,
+            "label": "27–37 мин · 10,1 км · 22–32 £",
+            "label_en": "27–37 min · 10.1 km · £22–32"
+          },
+          "sort_km": 10.131,
+          "transit": {
+            "min": 42,
+            "description": "Jubilee North Greenwich → Waterloo; Northern Waterloo → Leicester Square; 22 мин пешком (1 пересадка) · ~£3.10 бесконтактно",
+            "description_en": "Jubilee North Greenwich → Waterloo; Northern Waterloo → Leicester Square; 22 min walk (1 change) · ~£3.10 contactless",
+            "mode": "tube"
+          }
+        }
+      },
+      "transit": {
+        "min": 30,
+        "description": "Northern Waterloo → Leicester Square; 26 мин пешком · ~£3.00 бесконтактно",
+        "description_en": "Northern Waterloo → Leicester Square; 26 min walk · ~£3.00 contactless",
+        "mode": "tube"
+      },
+      "google": {
+        "cid": "11256896404490944630",
+        "feature_id": "0x487604b7c7d895c5:0x9c3887a3670e0076",
+        "maps_url": "https://www.google.com/maps/place/Dishoom+Covent+Garden/@51.5125,-0.1269,16z/data=!4m6!3m5!1s0x487604b7c7d895c5:0x9c3887a3670e0076!8m2!3d51.5125176!4d-0.1268291!16s%2Fg%2F1tdjwh2v"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "sample-concert-o2",
+      "name": "Sample concert at The O2",
+      "name_en": "Sample concert at The O2",
+      "name_ru": "Пример концерта в The O2",
+      "category": "events",
+      "source": "event",
+      "schedule_text": "Saturday 15 March 2027, doors 18:30 (fictional demo event)",
+      "schedule_en": "Saturday 15 March 2027, doors 18:30 (fictional demo event)",
+      "description_en": "Demo only — not a real ticketed show. Illustrates how events appear in the guide.",
+      "maps_url": "https://maps.google.com/?cid=10961177707974089439",
+      "lat": 51.503,
+      "lng": -0.0032,
+      "source_urls": [
+        "https://www.theo2.co.uk/"
+      ],
+      "sort_km": 12.884,
+      "walk": {
+        "km": 9.876891516164214,
+        "min": 126,
+        "practical": false,
+        "label": "далеко (~9,9 км)",
+        "label_en": "far (~9.9 km)"
+      },
+      "taxi": {
+        "km": 12.884,
+        "min_low": 33,
+        "min_high": 45,
+        "thb_min": 28,
+        "thb_max": 40,
+        "label": "33–45 мин · 12,9 км · 28–40 £",
+        "label_en": "33–45 min · 12.9 km · £28–40"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 9.876891516164214,
+            "min": 126,
+            "practical": false,
+            "label": "далеко (~9,9 км)",
+            "label_en": "far (~9.9 km)"
+          },
+          "taxi": {
+            "km": 12.884,
+            "min_low": 33,
+            "min_high": 45,
+            "thb_min": 28,
+            "thb_max": 40,
+            "label": "33–45 мин · 12,9 км · 28–40 £",
+            "label_en": "33–45 min · 12.9 km · £28–40"
+          },
+          "sort_km": 12.884,
+          "transit": {
+            "min": 41,
+            "description": "77 bus to Waterloo Station/Upper Taxi Rd; Jubilee Waterloo → North Greenwich; 25 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+            "description_en": "77 bus to Waterloo Station/Upper Taxi Rd; Jubilee Waterloo → North Greenwich; 25 min walk (1 change) · ~£4.95 contactless",
+            "mode": "bus,tube"
+          }
+        },
+        "concert-o2": {
+          "walk": {
+            "km": 0,
+            "min": 0,
+            "practical": true,
+            "label": "0 мин · 0,0 км",
+            "label_en": "0 min · 0.0 km"
+          },
+          "taxi": {
+            "km": 0,
+            "min_low": 1,
+            "min_high": 2,
+            "thb_min": 4,
+            "thb_max": 14,
+            "label": "1–2 мин · 0,0 км · 4–14 £",
+            "label_en": "1–2 min · 0.0 km · £4–14"
+          },
+          "sort_km": 0,
+          "transit": {
+            "min": 0,
+            "description": "На площадке",
+            "description_en": "At the venue",
+            "mode": "walking"
+          }
+        }
+      },
+      "transit": {
+        "min": 41,
+        "description": "77 bus to Waterloo Station/Upper Taxi Rd; Jubilee Waterloo → North Greenwich; 25 мин пешком (1 пересадка) · ~£4.95 бесконтактно",
+        "description_en": "77 bus to Waterloo Station/Upper Taxi Rd; Jubilee Waterloo → North Greenwich; 25 min walk (1 change) · ~£4.95 contactless",
+        "mode": "bus,tube"
+      },
+      "google": {
+        "cid": "10961177707974089439",
+        "feature_id": "0x47d8a81c5507b387:0x981ded0cf3b9dadf",
+        "maps_url": "https://maps.google.com/?cid=10961177707974089439"
+      }
+    }
+  ],
+  "sources": [
+    "https://www.visitlondon.com/"
+  ],
+  "routing": {
+    "drive": "osrm",
+    "walk": "haversine_x1.25",
+    "walk_speed_kmh": 4.7,
+    "transit": "tfl"
+  },
+  "ui": {
+    "summary": "Демо: публичные места Лондона с двумя точками отсчёта.",
+    "summary_en": "Demo: public London sights with hotel and O2 concert origins.",
+    "callouts": {
+      "info": {
+        "lead": "Demo data",
+        "lead_en": "Demo data",
+        "body": "Fares and concert date are fictional samples.",
+        "body_en": "Fares and concert date are fictional samples."
+      }
+    }
+  }
+}

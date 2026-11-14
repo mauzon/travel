@@ -1,0 +1,640 @@
+{
+  "slug": "example",
+  "name_ru": "Лиссабон",
+  "name_en": "Lisbon",
+  "country": "PT",
+  "timezone": "Europe/Lisbon",
+  "currency": "EUR",
+  "hotel": {
+    "name": "Example Hotel",
+    "address": "Praça do Comércio, 1100-148 Lisbon, Portugal",
+    "lat": 38.7075,
+    "lng": -9.1365,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Example+Hotel+Pra%C3%A7a+do+Com%C3%A9rcio%2C+1100-148+Lisbon%2C+Portugal+Lisbon",
+    "district": "Baixa",
+    "district_en": "Baixa",
+    "stay": {
+      "check_in": "2026-06-10",
+      "check_out": "2026-06-14",
+      "label": "Sample stay (example data only)"
+    },
+    "transit_description": "Metro: Baixa-Chiado (Blue and Green lines).",
+    "transit_description_en": "Metro: Baixa-Chiado (Blue and Green lines)."
+  },
+  "origins": [
+    {
+      "id": "hotel",
+      "label_ru": "Отель",
+      "label_en": "Hotel",
+      "kind": "hotel",
+      "default": true,
+      "lat": 38.7075,
+      "lng": -9.1365,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Hotel+Lisbon"
+    },
+    {
+      "id": "venue",
+      "label_ru": "Площадка",
+      "label_en": "Venue",
+      "kind": "venue",
+      "lat": 38.6958,
+      "lng": -9.2087,
+      "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Venue+Lisbon"
+    }
+  ],
+  "transport": {
+    "taxi": {
+      "base_fare_thb": 4,
+      "per_km_thb_min": 1,
+      "per_km_thb_max": 1.4,
+      "traffic_factor": 1.25,
+      "note": "Lisbon metered taxi estimate (example)."
+    },
+    "transit_description": "Carris buses, metro, and historic trams.",
+    "transit_description_en": "Carris buses, metro, and historic trams."
+  },
+  "source": {
+    "filter": {
+      "lat": 38.7223,
+      "lng": -9.1393,
+      "radius_km": 25
+    }
+  },
+  "places": [
+    {
+      "id": "jeronimos",
+      "name": "Mosteiro dos Jerónimos",
+      "name_en": "Jerónimos Monastery",
+      "category": "culture",
+      "source": "added",
+      "description_en": "UNESCO-listed Manueline monastery in Belém.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Jer%C3%B3nimos+Monastery+Lisbon",
+      "lat": 38.6979,
+      "lng": -9.2067,
+      "sort_km": 6.583,
+      "walk": {
+        "km": 7.730674965626463,
+        "min": 99,
+        "practical": false,
+        "label": "далеко (~7,7 км)",
+        "label_en": "far (~7.7 km)"
+      },
+      "taxi": {
+        "km": 6.583,
+        "min_low": 9,
+        "min_high": 12,
+        "thb_min": 10,
+        "thb_max": 20,
+        "label": "9–12 мин · 6,6 км · 10–20 €",
+        "label_en": "9–12 min · 6.6 km · €10–20"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 7.730674965626463,
+            "min": 99,
+            "practical": false,
+            "label": "далеко (~7,7 км)",
+            "label_en": "far (~7.7 km)"
+          },
+          "taxi": {
+            "km": 6.583,
+            "min_low": 9,
+            "min_high": 12,
+            "thb_min": 10,
+            "thb_max": 20,
+            "label": "9–12 мин · 6,6 км · 10–20 €",
+            "label_en": "9–12 min · 6.6 km · €10–20"
+          },
+          "sort_km": 6.583
+        },
+        "venue": {
+          "walk": {
+            "km": 0.3636882973144101,
+            "min": 5,
+            "practical": true,
+            "label": "5 мин · 0,4 км",
+            "label_en": "5 min · 0.4 km"
+          },
+          "taxi": {
+            "km": 0.941,
+            "min_low": 3,
+            "min_high": 4,
+            "thb_min": 4,
+            "thb_max": 14,
+            "label": "3–4 мин · 0,9 км · 4–14 €",
+            "label_en": "3–4 min · 0.9 km · €4–14"
+          },
+          "sort_km": 0.941
+        }
+      }
+    },
+    {
+      "id": "belem-tower",
+      "name": "Belém Tower",
+      "name_ru": "Башня Белен",
+      "name_en": "Belém Tower",
+      "category": "culture",
+      "source": "added",
+      "description_en": "16th-century fortress and symbol of the Age of Discoveries.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Bel%C3%A9m+Tower+Lisbon",
+      "lat": 38.6916,
+      "lng": -9.216,
+      "sort_km": 7.927,
+      "walk": {
+        "km": 8.902479298381364,
+        "min": 114,
+        "practical": false,
+        "label": "далеко (~8,9 км)",
+        "label_en": "far (~8.9 km)"
+      },
+      "taxi": {
+        "km": 7.927,
+        "min_low": 11,
+        "min_high": 15,
+        "thb_min": 11,
+        "thb_max": 21,
+        "label": "11–15 мин · 7,9 км · 11–21 €",
+        "label_en": "11–15 min · 7.9 km · €11–21"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 8.902479298381364,
+            "min": 114,
+            "practical": false,
+            "label": "далеко (~8,9 км)",
+            "label_en": "far (~8.9 km)"
+          },
+          "taxi": {
+            "km": 7.927,
+            "min_low": 11,
+            "min_high": 15,
+            "thb_min": 11,
+            "thb_max": 21,
+            "label": "11–15 мин · 7,9 км · 11–21 €",
+            "label_en": "11–15 min · 7.9 km · €11–21"
+          },
+          "sort_km": 7.927
+        },
+        "venue": {
+          "walk": {
+            "km": 0.9838468036587813,
+            "min": 13,
+            "practical": true,
+            "label": "13 мин · 1,0 км",
+            "label_en": "13 min · 1.0 km"
+          },
+          "taxi": {
+            "km": 2.212,
+            "min_low": 5,
+            "min_high": 7,
+            "thb_min": 5,
+            "thb_max": 15,
+            "label": "5–7 мин · 2,2 км · 5–15 €",
+            "label_en": "5–7 min · 2.2 km · €5–15"
+          },
+          "sort_km": 2.212
+        }
+      }
+    },
+    {
+      "id": "sao-jorge",
+      "name": "São Jorge Castle",
+      "name_ru": "Замок Святого Жорже",
+      "name_en": "São Jorge Castle",
+      "category": "culture",
+      "source": "added",
+      "description_en": "Hilltop castle with panoramic views over Alfama.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=S%C3%A3o+Jorge+Castle+Lisbon",
+      "lat": 38.7139,
+      "lng": -9.1334,
+      "sort_km": 2.214,
+      "walk": {
+        "km": 0.9509789954088705,
+        "min": 12,
+        "practical": true,
+        "label": "12 мин · 1,0 км",
+        "label_en": "12 min · 1.0 km"
+      },
+      "taxi": {
+        "km": 2.214,
+        "min_low": 5,
+        "min_high": 6,
+        "thb_min": 5,
+        "thb_max": 15,
+        "label": "5–6 мин · 2,2 км · 5–15 €",
+        "label_en": "5–6 min · 2.2 km · €5–15"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 0.9509789954088705,
+            "min": 12,
+            "practical": true,
+            "label": "12 мин · 1,0 км",
+            "label_en": "12 min · 1.0 km"
+          },
+          "taxi": {
+            "km": 2.214,
+            "min_low": 5,
+            "min_high": 6,
+            "thb_min": 5,
+            "thb_max": 15,
+            "label": "5–6 мин · 2,2 км · 5–15 €",
+            "label_en": "5–6 min · 2.2 km · €5–15"
+          },
+          "sort_km": 2.214
+        },
+        "venue": {
+          "walk": {
+            "km": 8.546281643115538,
+            "min": 109,
+            "practical": false,
+            "label": "далеко (~8,5 км)",
+            "label_en": "far (~8.5 km)"
+          },
+          "taxi": {
+            "km": 8.32,
+            "min_low": 12,
+            "min_high": 16,
+            "thb_min": 11,
+            "thb_max": 21,
+            "label": "12–16 мин · 8,3 км · 11–21 €",
+            "label_en": "12–16 min · 8.3 km · €11–21"
+          },
+          "sort_km": 8.32
+        }
+      }
+    },
+    {
+      "id": "portas-do-sol",
+      "name": "Miradouro Portas do Sol",
+      "name_en": "Portas do Sol viewpoint",
+      "category": "viewpoint",
+      "source": "list",
+      "user_note": "Sample list note: sunset spot above Alfama.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Portas+do+Sol+viewpoint+Lisbon",
+      "lat": 38.712,
+      "lng": -9.1301,
+      "sort_km": 2.285,
+      "walk": {
+        "km": 0.9343720978687124,
+        "min": 12,
+        "practical": true,
+        "label": "12 мин · 0,9 км",
+        "label_en": "12 min · 0.9 km"
+      },
+      "taxi": {
+        "km": 2.285,
+        "min_low": 5,
+        "min_high": 7,
+        "thb_min": 5,
+        "thb_max": 15,
+        "label": "5–7 мин · 2,3 км · 5–15 €",
+        "label_en": "5–7 min · 2.3 km · €5–15"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 0.9343720978687124,
+            "min": 12,
+            "practical": true,
+            "label": "12 мин · 0,9 км",
+            "label_en": "12 min · 0.9 km"
+          },
+          "taxi": {
+            "km": 2.285,
+            "min_low": 5,
+            "min_high": 7,
+            "thb_min": 5,
+            "thb_max": 15,
+            "label": "5–7 мин · 2,3 км · 5–15 €",
+            "label_en": "5–7 min · 2.3 km · €5–15"
+          },
+          "sort_km": 2.285
+        },
+        "venue": {
+          "walk": {
+            "km": 8.81799409013915,
+            "min": 113,
+            "practical": false,
+            "label": "далеко (~8,8 км)",
+            "label_en": "far (~8.8 km)"
+          },
+          "taxi": {
+            "km": 8.366,
+            "min_low": 12,
+            "min_high": 16,
+            "thb_min": 11,
+            "thb_max": 21,
+            "label": "12–16 мин · 8,4 км · 11–21 €",
+            "label_en": "12–16 min · 8.4 km · €11–21"
+          },
+          "sort_km": 8.366
+        }
+      }
+    },
+    {
+      "id": "timeout-market",
+      "name": "Time Out Market",
+      "name_en": "Time Out Market",
+      "category": "food",
+      "source": "added",
+      "description_en": "Food hall with stalls from well-known Lisbon chefs.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Time+Out+Market+Lisbon",
+      "lat": 38.7073,
+      "lng": -9.1459,
+      "sort_km": 1.105,
+      "walk": {
+        "km": 1.0199372337586772,
+        "min": 13,
+        "practical": true,
+        "label": "13 мин · 1,0 км",
+        "label_en": "13 min · 1.0 km"
+      },
+      "taxi": {
+        "km": 1.105,
+        "min_low": 2,
+        "min_high": 3,
+        "thb_min": 4,
+        "thb_max": 14,
+        "label": "2–3 мин · 1,1 км · 4–14 €",
+        "label_en": "2–3 min · 1.1 km · €4–14"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 1.0199372337586772,
+            "min": 13,
+            "practical": true,
+            "label": "13 мин · 1,0 км",
+            "label_en": "13 min · 1.0 km"
+          },
+          "taxi": {
+            "km": 1.105,
+            "min_low": 2,
+            "min_high": 3,
+            "thb_min": 4,
+            "thb_max": 14,
+            "label": "2–3 мин · 1,1 км · 4–14 €",
+            "label_en": "2–3 min · 1.1 km · €4–14"
+          },
+          "sort_km": 1.105
+        },
+        "venue": {
+          "walk": {
+            "km": 6.997094247769172,
+            "min": 89,
+            "practical": false,
+            "label": "далеко (~7,0 км)",
+            "label_en": "far (~7.0 km)"
+          },
+          "taxi": {
+            "km": 6.104,
+            "min_low": 8,
+            "min_high": 11,
+            "thb_min": 9,
+            "thb_max": 19,
+            "label": "8–11 мин · 6,1 км · 9–19 €",
+            "label_en": "8–11 min · 6.1 km · €9–19"
+          },
+          "sort_km": 6.104
+        }
+      }
+    },
+    {
+      "id": "lx-factory",
+      "name": "LX Factory",
+      "name_en": "LX Factory",
+      "category": "shopping",
+      "source": "added",
+      "description_en": "Creative hub in a converted industrial complex.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=LX+Factory+Lisbon",
+      "lat": 38.7025,
+      "lng": -9.1782,
+      "sort_km": 3.975,
+      "walk": {
+        "km": 4.576165272232434,
+        "min": 58,
+        "practical": false,
+        "label": "далеко (~4,6 км)",
+        "label_en": "far (~4.6 km)"
+      },
+      "taxi": {
+        "km": 3.975,
+        "min_low": 6,
+        "min_high": 8,
+        "thb_min": 7,
+        "thb_max": 17,
+        "label": "6–8 мин · 4,0 км · 7–17 €",
+        "label_en": "6–8 min · 4.0 km · €7–17"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 4.576165272232434,
+            "min": 58,
+            "practical": false,
+            "label": "далеко (~4,6 км)",
+            "label_en": "far (~4.6 km)"
+          },
+          "taxi": {
+            "km": 3.975,
+            "min_low": 6,
+            "min_high": 8,
+            "thb_min": 7,
+            "thb_max": 17,
+            "label": "6–8 мин · 4,0 км · 7–17 €",
+            "label_en": "6–8 min · 4.0 km · €7–17"
+          },
+          "sort_km": 3.975
+        },
+        "venue": {
+          "walk": {
+            "km": 3.437086760056406,
+            "min": 44,
+            "practical": true,
+            "label": "44 мин · 3,4 км",
+            "label_en": "44 min · 3.4 km"
+          },
+          "taxi": {
+            "km": 3.352,
+            "min_low": 5,
+            "min_high": 7,
+            "thb_min": 6,
+            "thb_max": 16,
+            "label": "5–7 мин · 3,4 км · 6–16 €",
+            "label_en": "5–7 min · 3.4 km · €6–16"
+          },
+          "sort_km": 3.352
+        }
+      }
+    },
+    {
+      "id": "oceanario",
+      "name": "Oceanário de Lisboa",
+      "name_ru": "Океанариум",
+      "name_en": "Oceanário de Lisboa",
+      "category": "culture",
+      "source": "added",
+      "description_en": "Large public aquarium at Parque das Nações.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Ocean%C3%A1rio+de+Lisboa+Lisbon",
+      "lat": 38.7635,
+      "lng": -9.0937,
+      "daytrip": true,
+      "sort_km": 8.937,
+      "walk": {
+        "km": 9.061932079047235,
+        "min": 116,
+        "practical": false,
+        "label": "далеко (~9,1 км)",
+        "label_en": "far (~9.1 km)"
+      },
+      "taxi": {
+        "km": 8.937,
+        "min_low": 11,
+        "min_high": 15,
+        "thb_min": 12,
+        "thb_max": 22,
+        "label": "11–15 мин · 8,9 км · 12–22 €",
+        "label_en": "11–15 min · 8.9 km · €12–22"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 9.061932079047235,
+            "min": 116,
+            "practical": false,
+            "label": "далеко (~9,1 км)",
+            "label_en": "far (~9.1 km)"
+          },
+          "taxi": {
+            "km": 8.937,
+            "min_low": 11,
+            "min_high": 15,
+            "thb_min": 12,
+            "thb_max": 22,
+            "label": "11–15 мин · 8,9 км · 12–22 €",
+            "label_en": "11–15 min · 8.9 km · €12–22"
+          },
+          "sort_km": 8.937
+        },
+        "venue": {
+          "walk": {
+            "km": 15.621538393325022,
+            "min": 199,
+            "practical": false,
+            "label": "далеко (~15,6 км)",
+            "label_en": "far (~15.6 km)"
+          },
+          "taxi": {
+            "km": 15.854,
+            "min_low": 20,
+            "min_high": 27,
+            "thb_min": 19,
+            "thb_max": 29,
+            "label": "20–27 мин · 15,9 км · 19–29 €",
+            "label_en": "20–27 min · 15.9 km · €19–29"
+          },
+          "sort_km": 15.854
+        }
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "santo-antónio",
+      "name": "Festas de Santo António",
+      "name_en": "Santo António festivities",
+      "category": "events",
+      "source": "event",
+      "schedule_text": "12–13 June 2026 · street parties and sardine grills in Alfama and Graça",
+      "schedule_en": "12–13 June 2026 · street parties and sardine grills in Alfama and Graça",
+      "description_en": "Lisbon's popular June festival honoring Saint Anthony.",
+      "maps_url": "https://www.google.com/maps/search/?api=1&query=Santo+Ant%C3%B3nio+festivities+Lisbon",
+      "lat": 38.712,
+      "lng": -9.13,
+      "source_urls": [
+        "https://www.visitlisboa.com/en/events"
+      ],
+      "sort_km": 2.285,
+      "walk": {
+        "km": 0.9424575582056092,
+        "min": 12,
+        "practical": true,
+        "label": "12 мин · 0,9 км",
+        "label_en": "12 min · 0.9 km"
+      },
+      "taxi": {
+        "km": 2.285,
+        "min_low": 5,
+        "min_high": 7,
+        "thb_min": 5,
+        "thb_max": 15,
+        "label": "5–7 мин · 2,3 км · 5–15 €",
+        "label_en": "5–7 min · 2.3 km · €5–15"
+      },
+      "routes": {
+        "hotel": {
+          "walk": {
+            "km": 0.9424575582056092,
+            "min": 12,
+            "practical": true,
+            "label": "12 мин · 0,9 км",
+            "label_en": "12 min · 0.9 km"
+          },
+          "taxi": {
+            "km": 2.285,
+            "min_low": 5,
+            "min_high": 7,
+            "thb_min": 5,
+            "thb_max": 15,
+            "label": "5–7 мин · 2,3 км · 5–15 €",
+            "label_en": "5–7 min · 2.3 km · €5–15"
+          },
+          "sort_km": 2.285
+        },
+        "venue": {
+          "walk": {
+            "km": 8.828481823541294,
+            "min": 113,
+            "practical": false,
+            "label": "далеко (~8,8 км)",
+            "label_en": "far (~8.8 km)"
+          },
+          "taxi": {
+            "km": 8.366,
+            "min_low": 12,
+            "min_high": 16,
+            "thb_min": 11,
+            "thb_max": 21,
+            "label": "12–16 мин · 8,4 км · 11–21 €",
+            "label_en": "12–16 min · 8.4 km · €11–21"
+          },
+          "sort_km": 8.366
+        }
+      }
+    }
+  ],
+  "sources": [
+    "https://www.visitlisboa.com/"
+  ],
+  "routing": {
+    "drive": "osrm",
+    "walk": "haversine_x1.25",
+    "walk_speed_kmh": 4.7
+  },
+  "ui": {
+    "summary": "Демо-страница с публичными достопримечательностями Лиссабона.",
+    "summary_en": "Demo page with well-known public Lisbon landmarks (not a real trip).",
+    "callouts": {
+      "info": {
+        "lead": "Пример данных",
+        "lead_en": "Example data",
+        "body": "Замените этот файл своим городом после импорта Google Maps.",
+        "body_en": "Replace this file with your own city after importing a Google Maps list."
+      }
+    }
+  }
+}

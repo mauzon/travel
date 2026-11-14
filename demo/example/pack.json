@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "example",
+  "name": "Lisbon example",
+  "description": "Smaller demo with neutral Hotel/Venue origins and public Lisbon landmarks (precomputed routes).",
+  "cityIds": ["example"],
+  "config": {
+    "defaultLang": "en",
+    "defaultCity": "example",
+    "siteTitle": "Пример: Лиссабон",
+    "siteTitle_en": "Example: Lisbon",
+    "googleList": "",
+    "cities": [
+      {
+        "slug": "example",
+        "title": "Лиссабон (пример)",
+        "title_en": "Lisbon (example)"
+      }
+    ]
+  },
+  "files": [
+    {
+      "path": "example.json",
+      "target": "data/cities/example.json"
+    }
+  ]
+}
