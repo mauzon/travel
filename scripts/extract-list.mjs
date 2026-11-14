@@ -37,7 +37,7 @@ async function fetchList(listId) {
   const pb = `!1m4!1s${listId}!2e1!3m1!1e1!2e2!3e2!4i500`;
   const api = `https://www.google.com/maps/preview/entitylist/getlist?authuser=0&hl=en&pb=${encodeURIComponent(pb)}`;
   const res = await fetch(api, {
-    headers: { "User-Agent": "travel-places/1.0" },
+    headers: { "User-Agent": "pinkeepr/1.0 (mauzon/pinkeepr)" },
   });
   if (!res.ok) throw new Error(`getlist HTTP ${res.status}`);
   let text = await res.text();

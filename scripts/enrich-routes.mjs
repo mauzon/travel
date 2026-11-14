@@ -52,7 +52,7 @@ async function osrmDrive(lat1, lng1, lat2, lng2) {
   const url = `https://router.project-osrm.org/route/v1/driving/${lng1},${lat1};${lng2},${lat2}?overview=false`;
   for (let attempt = 0; attempt < 5; attempt++) {
     try {
-      const res = await fetch(url, { headers: { "User-Agent": "travel-places/1.0" } });
+      const res = await fetch(url, { headers: { "User-Agent": "pinkeepr/1.0 (mauzon/pinkeepr)" } });
       if (res.status === 429) {
         await new Promise((r) => setTimeout(r, 1000 * (attempt + 1)));
         continue;

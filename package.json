@@ -2,6 +2,10 @@
   "name": "pinkeepr",
   "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauzon/pinkeepr.git"
+  },
   "engines": {
     "node": ">=22.12"
   },

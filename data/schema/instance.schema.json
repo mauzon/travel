@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://travel-places.local/schema/instance.schema.json",
+  "$id": "https://pinkeepr.local/schema/instance.schema.json",
   "title": "Travel instance state (no secrets)",
   "type": "object",
   "required": ["schemaVersion", "repository", "hosting", "domain", "accessControl", "site"],
