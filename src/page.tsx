@@ -56,6 +56,7 @@ import {
 } from "./origins";
 import { CategoryPill, CategoryChips, categorySlug } from "./CategoryUi";
 import { resolveHotelMapsUrl, resolveOriginMapsUrl, resolvePlaceMapsUrl } from "./maps-link";
+import { registerServiceWorkerHandlers } from "./pwa-client";
 
 type DisplayPlace = {
   s: "u" | "a" | "e";
@@ -304,11 +305,25 @@ export default function TravelCityPage() {
   const cfg = siteConfig as { siteTitle: string; siteTitle_en?: string; defaultCity: string };
 
   const [shareToast, setShareToast] = useState(false);
+  const [offlineBanner, setOfflineBanner] = useState(false);
+  const [updatedToast, setUpdatedToast] = useState(false);
   useEffect(() => {
     if (!shareToast) return;
     const id = window.setTimeout(() => setShareToast(false), 2000);
     return () => window.clearTimeout(id);
   }, [shareToast]);
+  useEffect(() => {
+    if (!updatedToast) return;
+    const id = window.setTimeout(() => setUpdatedToast(false), 4000);
+    return () => window.clearTimeout(id);
+  }, [updatedToast]);
+  useEffect(() => {
+    registerServiceWorkerHandlers({
+      onOffline: () => setOfflineBanner(true),
+      onOnline: () => setOfflineBanner(false),
+      onUpdated: () => setUpdatedToast(true),
+    });
+  }, []);
   const onMapsCopied = () => setShareToast(true);
 
   const [cat, setCat] = useState<string>("all");
@@ -629,6 +644,12 @@ export default function TravelCityPage() {
       <Footnote>{t.footnote}</Footnote>
       <BackToTop label={t.backToTop} />
       <ShareToast visible={shareToast} message={t.share.toast} />
+      <ShareToast visible={updatedToast} message={t.offline.updated} />
+      {offlineBanner ? (
+        <div role="status" aria-live="polite" className="offline-banner">
+          {t.offline.banner}
+        </div>
+      ) : null}
     </Page>
     </>
   );

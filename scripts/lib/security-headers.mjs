@@ -35,5 +35,7 @@ export function netlifyHeadersBlock() {
   lines.push("", "/icon-*.png", "  Cache-Control: public, max-age=86400");
   lines.push("", "/favicon*", "  Cache-Control: public, max-age=86400");
   lines.push("", "/apple-touch-icon.png", "  Cache-Control: public, max-age=86400");
+  lines.push("", "/sw.js", "  Cache-Control: no-cache, must-revalidate");
+  lines.push("  Service-Worker-Allowed: /");
   return lines.join("\n") + "\n";
 }

@@ -122,6 +122,10 @@ export const en: typeof ru = {
     expand: "Show language and city",
     reload: "Reload",
   },
+  offline: {
+    banner: "Offline — showing saved copy",
+    updated: "Updated — refresh for latest",
+  },
   theme: {
     switchToDark: "Switch to dark theme",
     switchToLight: "Switch to light theme",

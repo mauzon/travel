@@ -10,6 +10,7 @@
     "validate": "node scripts/validate.mjs",
     "build": "node build.mjs",
     "test:browser": "node scripts/browser-check.mjs",
+    "test:offline": "node scripts/offline-check.mjs --prepare",
     "sync-list": "node scripts/sync-list.mjs --all",
     "migrate-origins": "node scripts/migrate-origins.mjs",
     "add-origin": "node scripts/add-origin.mjs",

@@ -20,6 +20,12 @@ function run(cmd) {
 
 function contentType(file) {
   if (file.endsWith(".html")) return "text/html; charset=utf-8";
+  if (file.endsWith(".js")) return "application/javascript; charset=utf-8";
+  if (file.endsWith(".json")) return "application/json; charset=utf-8";
+  if (file.endsWith(".webmanifest")) return "application/manifest+json";
+  if (file.endsWith(".svg")) return "image/svg+xml";
+  if (file.endsWith(".png")) return "image/png";
+  if (file.endsWith(".ico")) return "image/x-icon";
   return "application/octet-stream";
 }
 
@@ -34,7 +40,13 @@ function makeServer() {
       res.end("not found");
       return;
     }
-    res.writeHead(200, { "Content-Type": contentType(safe) });
+    const headers = { "Content-Type": contentType(safe) };
+    const rel = path.relative(distRoot, safe);
+    if (rel === "sw.js") {
+      headers["Service-Worker-Allowed"] = "/";
+      headers["Cache-Control"] = "no-cache";
+    }
+    res.writeHead(200, headers);
     res.end(fs.readFileSync(safe));
   });
 }
@@ -482,4 +494,12 @@ if (errors.length) {
   console.error("Errors:", JSON.stringify(errors, null, 2));
   process.exit(1);
 }
-console.log("browser check OK (empty + london)");
+
+console.log("--- offline pwa ---");
+try {
+  execSync("node scripts/offline-check.mjs", { cwd: root, stdio: "inherit" });
+} catch {
+  process.exit(1);
+}
+
+console.log("browser check OK (empty + london + offline)");

@@ -11,6 +11,7 @@ import {
 } from "./scripts/locale-paths.mjs";
 import { escapeHtml } from "./scripts/lib/html-escape.mjs";
 import { netlifyHeadersBlock } from "./scripts/lib/security-headers.mjs";
+import { copyCityJsonToDist, writeServiceWorker } from "./scripts/lib/generate-sw.mjs";
 
 const root = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(root, "dist");
@@ -22,8 +23,16 @@ const publicDir = path.join(root, "public");
 function copyPublicAssets() {
   if (!fs.existsSync(publicDir)) return;
   for (const name of fs.readdirSync(publicDir)) {
+    if (name === "sw.js") continue;
     fs.copyFileSync(path.join(publicDir, name), path.join(distDir, name));
   }
+}
+
+function finalizeDist() {
+  copyCityJsonToDist(root, distDir, config);
+  writeServiceWorker(distDir);
+  fs.writeFileSync(path.join(distDir, "_headers"), netlifyHeadersBlock());
+  console.log("wrote dist/_headers (Cloudflare / Netlify)");
 }
 
 function iconHeadTags(locale) {
@@ -278,12 +287,12 @@ if (!config.cities?.length || !config.defaultCity) {
   writeEmptyLanding("ru", "ru");
   write404("en", distDir);
   write404("ru", path.join(distDir, "ru"));
-  fs.writeFileSync(path.join(distDir, "_headers"), netlifyHeadersBlock());
   fs.mkdirSync(path.join(distDir, "en"), { recursive: true });
   fs.writeFileSync(
     path.join(distDir, "en", "index.html"),
     legacyEnRedirectHtml("/", "/en/"),
   );
+  finalizeDist();
   console.log("empty site: dist/index.html (no cities configured)");
   process.exit(0);
 }
@@ -315,6 +324,5 @@ fs.writeFileSync(
   legacyEnRedirectHtml(pagePath("en", config.defaultCity, config.defaultCity), rootLegacy),
 );
 
-fs.writeFileSync(path.join(distDir, "_headers"), netlifyHeadersBlock());
-console.log("wrote dist/_headers (Cloudflare / Netlify)");
+finalizeDist();
 console.log("default en: dist/index.html, ru: dist/ru/index.html, legacy /en/* → English paths");

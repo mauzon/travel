@@ -368,7 +368,8 @@ Always: read `.travel/instance.json` → perform steps → update `updatedAt` �
 | `npm run demo -- remove <id>` / `clear` | Unload |
 | `npm run validate` | City + pack + instance schema; https URL checks |
 | `npm run build` | Static site to `dist/` (+ `dist/_headers`) |
-| `npm run test:browser` | Playwright smoke (optional) |
+| `npm run test:browser` | Playwright smoke + offline PWA check |
+| `npm run test:offline` | Playwright: SW precache, reload offline, place cards visible |
 | `npm run audit:security` | Security/privacy report in `reports/` |
 | `npm run remove-place` | Drop place or event by id |
 | `npm run remove-origin` | Drop origin + route keys; optional `--enrich` |
@@ -386,6 +387,14 @@ Always: read `.travel/instance.json` → perform steps → update `updatedAt` �
 | `scripts/add-origin.mjs` | New reference point |
 | `scripts/new-city.mjs` | Scaffold city + config |
 | `scripts/instance.mjs` | Instance state CRUD |
+
+---
+
+## Offline PWA
+
+`build.mjs` writes `dist/sw.js` (via `scripts/lib/generate-sw.mjs`): versioned cache, precache of all built files + `data/cities/*.json`, `skipWaiting` + `clients.claim`. Fetch: **network-first** (3s timeout) for HTML navigations and `/data/*.json`, with fallback to cache on network errors, timeouts, redirects, 401/403, or Cloudflare Access redirects; **cache-first** for icons/manifest. Registration in `src/pwa-client.ts` (production bundle). **Reload** (`src/pwa-reload.ts`): online → `registration.update()`, clear `travel-places-*` caches, reload; offline → plain reload without wiping cache. UI: offline banner + “Updated” toast (`src/i18n/*`). `dist/_headers`: `/sw.js` → `Cache-Control: no-cache`, `Service-Worker-Allowed: /`.
+
+**Works offline:** place list, filters, cards, theme/lang. **Does not:** Google Maps links/tiles. **Access-protected deploys:** expired Access sessions may redirect; cached HTML keeps the app usable until the user re-authenticates for fresh deploys.
 
 ---
 

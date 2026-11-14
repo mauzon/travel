@@ -249,6 +249,8 @@ A fresh clone has no trip data and builds an empty landing page until a pack or 
 
 **Icons & PWA:** default branding uses the suitcase emoji (🧳, U+1F9F3) from Twemoji, generated into `public/` (`favicon.svg`, `favicon.ico`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`, maskable variant, `site.webmanifest`). Regenerate with `node scripts/generate-icons.mjs` (needs Python Pillow). `npm run build` copies `public/` into `dist/` and links icons in every HTML `<head>`. The top bar **Reload** button (iOS standalone PWA) clears Cache Storage and service workers, then reloads with a fresh `?v=` timestamp; HTML is served with `Cache-Control: no-cache`.
 
+**Offline use:** `npm run build` emits `dist/sw.js` (versioned precache of all HTML routes, icons, manifest, and `data/cities/*.json`). After the first online visit, the installed PWA opens your place list, filters, and cards without a network. **Google Maps** links and map tiles still need the internet. On access-protected hosts (Cloudflare Access), if login redirects or 401/403 responses appear, the service worker serves the last cached HTML instead so the trip page still loads. Check with `npm run test:offline`.
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
