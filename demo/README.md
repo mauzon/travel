@@ -41,7 +41,7 @@ For each `files[].path`, fetch:
 
 ```bash
 npm run demo -- london
-npm run demo -- https://github.com/mauzon/travel/tree/main/demo/london
+npm run demo -- https://github.com/mauzon/pinkeepr/tree/main/demo/london
 npm run demo -- remove london
 npm run demo -- clear
 ```

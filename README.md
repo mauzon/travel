@@ -1,10 +1,10 @@
-# Travel places
+# PinKeepr
 
 **Your own private trip page that works great on a phone.**
 
 Put the places you want to see, where you want to eat, and the events you're going to on one page. For every place you see how far it is and how long it takes to get there from your starting point: a hotel, a friend's flat, an Airbnb, a train station during a layover, whatever you like. You can have several. Light or dark mode, English or Russian.
 
-👉 **[See the live demo: demotrip.25h.me](https://demotrip.25h.me/)** (London, made-up data)
+👉 **[See the live demo: demotrip.25h.me](https://demotrip.25h.me/)** (London, made-up data) · Project page: [pinkeepr.25h.me](https://pinkeepr.25h.me/)
 
 ![London demo on desktop](docs/screenshots/london-en-light-1280px.png)
 
@@ -23,7 +23,7 @@ You won't install anything, write code, or edit files. An **AI agent** (Claude C
 Copy it as is:
 
 ```text
-Set up my own travel site from https://github.com/mauzon/travel. Follow AGENTS.md end to end: fork to my account, deploy to my chosen host, load the London demo from https://github.com/mauzon/travel/tree/main/demo/london, keep trip data private, and maintain .travel/instance.json so you can manage the site later.
+Set up my own travel site from https://github.com/mauzon/pinkeepr. Follow AGENTS.md end to end: fork to my account, deploy to my chosen host, load the London demo from https://github.com/mauzon/pinkeepr/tree/main/demo/london, keep trip data private, and maintain .travel/instance.json so you can manage the site later.
 ```
 
 Don't want the demo? Change the end to **"deploy empty, no demo"**.
@@ -224,7 +224,7 @@ A fresh clone has no trip data and builds an empty landing page until a pack or 
 
 **Deploy:** Node 22, build `npm ci && npm run build`, output `dist/`. The configs are already in the repo: `wrangler.jsonc` (Cloudflare Workers), `vercel.json`, `netlify.toml`, `railway.json` + `serve.json` (Railway, `npm start`).
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/mauzon/travel)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/mauzon/pinkeepr)
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/github)
 
 **Where things live**

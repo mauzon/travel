@@ -100,7 +100,7 @@ export async function fetchTflJourney(from, to, { date, time, cache, cachePath, 
     `https://api.tfl.gov.uk/Journey/JourneyResults/${from.lat},${from.lng}/to/${to.lat},${to.lng}` +
     `?mode=${MODES}&timeIs=Departing&date=${date}&time=${time}`;
 
-  const headers = { "User-Agent": "travel-places/1.0 (mauzon/travel)" };
+  const headers = { "User-Agent": "travel-places/1.0 (mauzon/pinkeepr)" };
   if (process.env.TFL_APP_KEY) headers["app_key"] = process.env.TFL_APP_KEY;
 
   const res = await fetch(url, { headers });
@@ -136,7 +136,7 @@ export async function fetchNearestStations(lat, lng, radius = 600, limit = 4) {
   const url =
     `https://api.tfl.gov.uk/StopPoint?lat=${lat}&lon=${lng}&radius=${radius}` +
     `&stopTypes=NaptanMetroStation,NaptanRailStation`;
-  const headers = { "User-Agent": "travel-places/1.0 (mauzon/travel)" };
+  const headers = { "User-Agent": "travel-places/1.0 (mauzon/pinkeepr)" };
   if (process.env.TFL_APP_KEY) headers["app_key"] = process.env.TFL_APP_KEY;
   const res = await fetch(url, { headers });
   if (!res.ok) throw new Error(`StopPoint HTTP ${res.status}`);

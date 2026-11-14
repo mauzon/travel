@@ -1,8 +1,8 @@
-# Travel places — agent runbook
+# PinKeepr — agent runbook
 
-**This file is the single authoritative guide** for AI agents (Grok, Claude Code, Codex, Cursor Cloud, Hermes, etc.) managing a user’s travel-places site end to end.
+**This file is the single authoritative guide** for AI agents (Grok, Claude Code, Codex, Cursor Cloud, Hermes, etc.) managing a user’s PinKeepr trip site end to end.
 
-**Template repo:** `https://github.com/mauzon/travel`  
+**Template repo:** `https://github.com/mauzon/pinkeepr`  
 **Rule:** Real trip data stays in the user’s **private** fork unless they explicitly want a public demo.
 
 **Secrets:** Never commit tokens, passwords, or API keys. Store them only in the host’s secret store or local env. Record *non-secret* deployment facts in `.travel/instance.json` (see Phase 6).
@@ -14,7 +14,7 @@
 Typical user message:
 
 ```text
-Set up my own travel site from https://github.com/mauzon/travel, load the London demo, deploy to Vercel, and keep the repo private.
+Set up my own travel site from https://github.com/mauzon/pinkeepr, load the London demo, deploy to Vercel, and keep the repo private.
 ```
 
 **Your job:** walk Phases 1→6 in order, skip steps the user already has, ask humans only where marked **ASK HUMAN**, update `.travel/instance.json` after major steps, commit with clear messages, push so Git-connected hosts redeploy.
@@ -32,26 +32,26 @@ Set up my own travel site from https://github.com/mauzon/travel, load the London
 | User wants **private** trip data? | Fork as **private** (GitHub/GitLab) | Public fork OK only for demos |
 | User already has a repo? | Clone that repo; skip fork | Fork template first |
 | Agent has **only browser/API**? | Fork via host UI or `POST /repos/{owner}/{repo}/forks` | — |
-| Agent has **shell + gh**? | `gh repo fork mauzon/travel --clone` | — |
+| Agent has **shell + gh**? | `gh repo fork mauzon/pinkeepr --clone` | — |
 
 ### GitHub (primary)
 
 **Dashboard:** Fork → set visibility → clone URL `https://github.com/USER/REPO.git`
 
-**API (agent without shell):** `POST https://api.github.com/repos/mauzon/travel/forks` (user OAuth or PAT with `repo` scope — **ASK HUMAN** to authorize; do not ask them to paste the token into chat if the platform offers a secure connector).
+**API (agent without shell):** `POST https://api.github.com/repos/mauzon/pinkeepr/forks` (user OAuth or PAT with `repo` scope — **ASK HUMAN** to authorize; do not ask them to paste the token into chat if the platform offers a secure connector).
 
 **CLI:**
 
 ```bash
 gh auth login   # ASK HUMAN once if not authenticated
-gh repo fork mauzon/travel --clone --fork-name travel
-cd travel
+gh repo fork mauzon/pinkeepr --clone --fork-name pinkeepr
+cd pinkeepr
 node scripts/instance.mjs init
 ```
 
 ### GitLab (alternative)
 
-Import or mirror from GitHub: **New project → Import repository → URL** `https://github.com/mauzon/travel.git`. Use GitLab CI variables for secrets; build command same as below.
+Import or mirror from GitHub: **New project → Import repository → URL** `https://github.com/mauzon/pinkeepr.git`. Use GitLab CI variables for secrets; build command same as below.
 
 ### After fork
 
@@ -59,7 +59,7 @@ Import or mirror from GitHub: **New project → Import repository → URL** `htt
 2. Set `repository.url`, `repository.visibility`, `defaultBranch` via `node scripts/instance.mjs set repository.url "…"`.
 3. Default branch should stay **`main`** unless the user requests otherwise.
 
-**Do not** copy `mauzon/amtravel` or any private upstream; only `mauzon/travel`.
+**Do not** copy `mauzon/amtravel` or any private upstream; only `mauzon/pinkeepr`.
 
 ---
 
@@ -220,10 +220,10 @@ Packs: `demo/<id>/pack.json` + city JSON. Schema: `data/schema/pack.schema.json`
 
 ```bash
 npm run demo -- london
-npm run demo -- https://github.com/mauzon/travel/tree/main/demo/london
+npm run demo -- https://github.com/mauzon/pinkeepr/tree/main/demo/london
 ```
 
-**GitHub API only:** fetch `https://raw.githubusercontent.com/mauzon/travel/main/demo/london/pack.json` and each `files[].path`; write `target` paths; write `config.json` from manifest `config`.
+**GitHub API only:** fetch `https://raw.githubusercontent.com/mauzon/pinkeepr/main/demo/london/pack.json` and each `files[].path`; write `target` paths; write `config.json` from manifest `config`.
 
 After load:
 
